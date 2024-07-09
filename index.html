@@ -34,23 +34,25 @@
         <h1 class="professional-font">Parth Bibekar</h1>
         <p id="changing-text">I am a <span id="typed-text"></span></p>
     </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="assets/CV.pdf" target="_blank">CV</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="assets/CV.pdf" target="_blank">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <!-- </header> -->
 
     <main>
         <section id="about" class="block">
             <h2>About Me</h2>
-            <p>Hi, I'm Parth. I am an incoming PhD student at the <a href="https://www.epfl.ch/labs/lbm/" target="_blank" style="color: #d3d3d3;">Laboratory for Biomolecular Modeling</a>
-                at EPFL. My research interests include applications of machine learning in structural bioinformatics, computational
+            <p>Hi, I'm Parth. I am an incoming PhD student at the <a href="https://www.epfl.ch/labs/lbm/"
+                    target="_blank" style="color: #d3d3d3;">Laboratory for Biomolecular Modeling</a>
+                at EPFL. My research interests include applications of machine learning in structural bioinformatics,
+                computational
                 biophysics and integrative modeling. I enjoy playing chess, traveling, reading, and building things.</p>
-        
+
             <h3>Education</h3>
             <div class="education">
                 <div class="degree">
@@ -78,7 +80,7 @@
                 </div>
             </div>
         </section>
-        
+
 
 
         <section id="projects" class="block">
@@ -113,8 +115,7 @@
                             Computation. It is a geometric transformer and an extension of PeSTo, specifically
                             engineered to predict protein–carbohydrate and protein-cyclodextrin binding interfaces.</p>
                         <div class="project-buttons">
-                            <a href="https://github.com/LBM-EPFL/PeSTo-Carbs" target="_blank"
-                                class="project-button">
+                            <a href="https://github.com/LBM-EPFL/PeSTo-Carbs" target="_blank" class="project-button">
                                 <img src="assets/github-icon-38976.png" alt="GitHub" class="button-icon">
                                 <span>Code</span>
                             </a>
@@ -161,66 +162,68 @@
         <!-- lichess block -->
 
         <!-- lichess block -->
-<div id="lichess-playing-card" class="block">
-    <div class="lichess-content">
-        <div id="lichess-board-container">
-            <!-- Chess Game Details -->
-            <div id="chess-game-details">
-                <p><a href="https://www.chessgames.com/perl/chessgame?gid=1125358" target="_blank" style="color: #d3d3d3;">K Gerasimov vs Vasily Smyslov</a></p>
-                <p>Moscow Pioneer Home Championship (1935), Moscow URS</p>
-                <p>Rubinstein Opening (D05) · 0-1</p>
-            </div>
-            <!-- Chess Game -->
-            <!-- board embeded using https://chessboardjs.com/v2/ -->
-            <div id="myBoard"></div>
-            <div class="button-container">
-                <button id="prevBtn">&#9664;</button> <!-- Previous Move Button -->
-                <button id="nextBtn">&#9654;</button> <!-- Next Move Button -->
-                <button id="startPositionBtn">&#8635;</button> <!-- Start Position Button -->
-            </div>
-        </div>
+        <section id="lichess-playing-card" class="block">
+            <div class="lichess-content">
+                <div id="lichess-board-container">
+                    <!-- Chess Game Details -->
+                    <div id="chess-game-details">
+                        <p><a href="https://www.chessgames.com/perl/chessgame?gid=1125358" target="_blank"
+                                style="color: #d3d3d3;">K Gerasimov vs Vasily Smyslov</a></p>
+                        <p>Moscow Pioneer Home Championship (1935), Moscow URS</p>
+                        <p>Rubinstein Opening (D05) · 0-1</p>
+                    </div>
+                    <!-- Chess Game -->
+                    <!-- board embeded using https://chessboardjs.com/v2/ -->
+                    <div id="myBoard"></div>
+                    <div class="button-container">
+                        <button id="prevBtn">&#9664;</button> <!-- Previous Move Button -->
+                        <button id="nextBtn">&#9654;</button> <!-- Next Move Button -->
+                        <button id="startPositionBtn">&#8635;</button> <!-- Start Position Button -->
+                    </div>
+                </div>
 
-        <div id="right-column">
-            <div id="plot-container">
-                <div id="plot"></div>
-            </div>
-            <div id="lichess-info-box">
-                <div id="lichess-status">
-                    <span id="lichess-status-dot"></span>
-                    <span id="lichess-username">Parth_Bibekar</span>
-                    <a id="challenge-me" href="https://lichess.org/@/Parth_Bibekar" target="_blank">Challenge Me</a>
+                <div id="right-column">
+                    <div id="plot-container">
+                        <div id="plot"></div>
+                    </div>
+                    <div id="lichess-info-box">
+                        <div id="lichess-status">
+                            <span id="lichess-status-dot"></span>
+                            <span id="lichess-username">Parth_Bibekar</span>
+                            <a id="challenge-me" href="https://lichess.org/@/Parth_Bibekar" target="_blank">Challenge
+                                Me</a>
+                        </div>
+                        <div id="lichess-ratings">
+                            <div class="lichess-rating">
+                                <i class="fas fa-rocket"></i>
+                                <span id="lichess-rapid">-</span>
+                            </div>
+                            <div class="lichess-rating">
+                                <i class="fas fa-fire"></i>
+                                <span id="lichess-blitz">-</span>
+                            </div>
+                            <div class="lichess-rating">
+                                <i class="fas fa-bolt"></i>
+                                <span id="lichess-bullet">-</span>
+                            </div>
+                            <div class="lichess-rating">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span id="lichess-puzzle">-</span>
+                            </div>
+                            <div class="lichess-rating">
+                                <i class="fas fa-dice"></i>
+                                <span id="lichess-960">-</span>
+                            </div>
+                            <div class="lichess-rating">
+                                <i class="fas fa-wind"></i>
+                                <span id="lichess-puzzle-storm">16</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="lichess-ratings">
-                    <div class="lichess-rating">
-                        <i class="fas fa-rocket"></i>
-                        <span id="lichess-rapid">-</span>
-                    </div>
-                    <div class="lichess-rating">
-                        <i class="fas fa-fire"></i>
-                        <span id="lichess-blitz">-</span>
-                    </div>
-                    <div class="lichess-rating">
-                        <i class="fas fa-bolt"></i>
-                        <span id="lichess-bullet">-</span>
-                    </div>
-                    <div class="lichess-rating">
-                        <i class="fas fa-puzzle-piece"></i>
-                        <span id="lichess-puzzle">-</span>
-                    </div>
-                    <div class="lichess-rating">
-                        <i class="fas fa-dice"></i>
-                        <span id="lichess-960">-</span>
-                    </div>
-                    <div class="lichess-rating">
-                        <i class="fas fa-wind"></i>
-                        <span id="lichess-puzzle-storm">16</span>
-                    </div>
-                </div>
             </div>
-        </div>
-    </div>
-</div>
-<script src="lichess_script.js"></script>
+        </section>
+        <script src="lichess_script.js"></script>
 
 
 

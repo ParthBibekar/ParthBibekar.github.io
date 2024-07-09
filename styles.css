@@ -31,12 +31,17 @@ header p {
 }
 
 
+nav {
+    background-color: #1C1C1C;
+    padding: 10px 0;
+    text-align: center;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 
 nav ul li {
@@ -44,12 +49,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #E0E0E0;  /* Light grey links */
+    color: #E0E0E0;
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: #FFFFFF;  /* White on hover */
+    color: #FFFFFF;
 }
 
 main {
@@ -197,7 +202,33 @@ main {
     height: auto; /* Maintain aspect ratio */
 }
 
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    .project-details {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .project-text {
+        padding-left: 0; /* Remove left padding */
+        padding-top: 15px; /* Add top padding for spacing */
+    }
+
+    .project-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-button {
+        margin-bottom: 10px; /* Space between buttons */
+        margin-right: 0; /* Remove right margin */
+    }
+}
+
 /* Add styles for Lichess card */
+/* General styles */
+
 #lichess-playing-card {
     background-color: #1C1C1C;  /* Dark grey background */
     padding: 20px;
@@ -219,6 +250,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping of elements */
 }
 
 #lichess-board-container {
@@ -233,11 +265,6 @@ main {
     border: 2px solid #333; /* Dark border */
 }
 
-#lichess-board-container {
-    flex: 1;
-    padding-right: 20px;
-}
-
 #chess-game-details {
     color: #E0E0E0;
     text-align: center;
@@ -249,13 +276,11 @@ main {
     margin: 5px 0;
 }
 
-
 #chess-game-details p:first-child {
-    /* color: #E0E0E0; */
     text-decoration: underline;
 }
 
-#chess-game-details p:nth-child(2), 
+#chess-game-details p:nth-child(2),
 #chess-game-details p:nth-child(3) {
     font-size: 0.7em;
     color: #a9a9a9;
@@ -263,6 +288,7 @@ main {
 
 #myBoard {
     width: 400px;
+    padding-left: 20px;
 }
 
 .button-container {
@@ -298,7 +324,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* width: max-content; */
     width: 50%; /* Adjust width as needed */
 }
 
@@ -321,7 +346,6 @@ button:hover {
     padding: 5px;
     background-color: #3a3a3a;
     border-radius: 5px;
-    
 }
 
 #challenge-me {
@@ -341,33 +365,97 @@ button:hover {
 #lichess-ratings {
     display: flex;
     gap: 40px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .lichess-rating {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 5px; /* Space between icon and text */
+    margin-bottom: 10px; /* Space between rows */
 }
 
 .lichess-rating i {
     color: #FFD700; /* Gold color for icons */
+    flex-wrap: wrap;
 }
 
 #plot-container {
     width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
 }
 
 #plot {
-    width: 80%;
+    width: 70%;
     height: 400px; /* Adjust height as needed */
     padding-bottom: 10%;
-    padding-left: 10%;
+    /* padding-left: 10%; */
 }
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    .lichess-content {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+
+    #lichess-board-container {
+        width: 100%;
+        padding-right: 500px; /* Remove right padding */
+        margin-bottom: 20px; /* Space below board */
+        /* align-items: center; */
+    }
+
+    #myBoard {
+        width: 100%; /* Make the board responsive */
+        max-width: 250px; /* Maximum width for the board */
+        padding-left: 30px
+    }
+
+    #plot-container {
+        width: 400px; 
+        height: 520px; 
+        /* width: 100%; */
+        margin-bottom: 5px; /* Space below plot */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        overflow-y: hidden; /* Disable vertical scrolling */
+        margin-right: auto;
+    }
+
+    #lichess-info-box {
+        position: relative; /* Make it relative for the new order */
+        bottom: 0; /* Remove bottom positioning */
+        right: 0; /* Remove right positioning */
+        width: 100%; /* Full width */
+        margin-top: 5px; /* Space above info box */
+        padding-right: 500px;
+    }
+
+    #lichess-ratings {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Space between columns */
+    }
+
+    .lichess-rating {
+        width: 50%; /* Each rating takes almost half the width */
+        justify-content: center; /* Center items */
+        margin-bottom: 10px; /* Space between rows */
+        
+    }
+
+
+}
+
+
 
 
 /* publications */
 
 
+/* Default styles for desktop */
 .publication-details {
     display: flex;
     align-items: flex-start;
@@ -443,6 +531,31 @@ button:hover {
     vertical-align: middle;
 }
 
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    .publication-details {
+        display: block;
+    }
+
+    .publication-image {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 10px; /* Space below the image */
+    }
+
+    .publication-text {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .publication-text p {
+        padding-left: 0; /* Remove padding */
+        text-align: justify; /* Justify text */
+    }
+}
+
+
 
 /* Styles for Contact page */
 
@@ -512,6 +625,28 @@ button:hover {
     transform: scale(1.1); /* Scale up on hover */
 }
 
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    .contact-section {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .contact-details {
+        width: 100%; /* Full width for details */
+        margin-bottom: 20px; /* Space below details */
+    }
+
+    .contact-map {
+        width: 100%; /* Full width for map */
+    }
+
+    .contact-details h2, .contact-details p, .social-media-links {
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center align text */
+    }
+}
+
 
 
 footer {
@@ -546,4 +681,31 @@ footer ul li a:hover {
     background: linear-gradient(45deg, #2196F3, #9C27B0, #F44336); /* Blue to purple to red */
     -webkit-background-clip: text; /* Apply gradient as text color */
     -webkit-text-fill-color: transparent; /* Make original text transparent */
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        padding: 5px 0;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .block {
+        width: 95%;
+        margin: 10px 0;
+    }
 }

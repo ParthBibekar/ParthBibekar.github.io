@@ -1,6 +1,8 @@
 body {
-    background-color: #121212;  /* Dark grey background */
-    color: #E0E0E0;  /* Light grey text */
+    background-color: #121212;
+    /* Dark grey background */
+    color: #E0E0E0;
+    /* Light grey text */
     font-family: 'Courier New', Courier, monospace;
     /* font-family: "Raleway", sans-serif;  */
     margin: 0;
@@ -8,26 +10,33 @@ body {
 }
 
 header {
-    background-color: #1C1C1C;  /* Dark grey background */
+    background-color: #1C1C1C;
+    /* Dark grey background */
     padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #E0E0E0;  /* Light grey border */
+    border-bottom: 1px solid #E0E0E0;
+    /* Light grey border */
 }
 
 header h1.professional-font {
     /* font-family: 'Courier New', Courier, monospace; */
     font-family: 'Josefin Sans', monospace;
     /* font-family: "Raleway", sans-serif; */
-    font-weight: 700; /* Bold weight */
+    font-weight: 700;
+    /* Bold weight */
     font-size: 2.5em;
-    color: #FFFFFF; /* White text */
+    color: #FFFFFF;
+    /* White text */
 }
 
 header p {
     font-size: 1.5em;
-    color: #E0E0E0;  /* Light grey text */
-    display: inline-block; /* Allow the <p> to occupy only the width of its content */
-    white-space: nowrap; /* Ensure text does not wrap */
+    color: #E0E0E0;
+    /* Light grey text */
+    display: inline-block;
+    /* Allow the <p> to occupy only the width of its content */
+    white-space: nowrap;
+    /* Ensure text does not wrap */
 }
 
 
@@ -65,11 +74,13 @@ main {
 }
 
 .block {
-    background-color: #1C1C1C;  /* Dark grey background */
+    background-color: #1C1C1C;
+    /* Dark grey background */
     padding: 20px;
     margin: 20px 0;
     width: 80%;
-    border: 1px solid #E0E0E0;  /* Light grey border */
+    border: 1px solid #E0E0E0;
+    /* Light grey border */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -79,7 +90,8 @@ main {
     margin-bottom: 40px;
 }
 
-#about h2, #about h3 {
+#about h2,
+#about h3 {
     margin-bottom: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -95,7 +107,8 @@ main {
 }
 
 .degree .education-logo {
-    width: 50px; /* Adjust as needed */
+    width: 50px;
+    /* Adjust as needed */
     height: auto;
     margin-right: 10px;
 }
@@ -111,11 +124,13 @@ main {
 
 
 .project {
-    background-color: #2A2A2A;  /* Darker grey for projects */
+    background-color: #2A2A2A;
+    /* Darker grey for projects */
     padding: 15px;
     margin: 15px 0;
     border-radius: 8px;
-    border: 1px solid #E0E0E0;  /* Light grey border */
+    border: 1px solid #E0E0E0;
+    /* Light grey border */
 }
 
 .project-details {
@@ -124,94 +139,129 @@ main {
 }
 
 .project-image {
-    width: 300px; /* Adjust image width */
-    overflow: hidden; /* Ensure rounded corners */
-    border-radius: 8px; /* Adjusted rounded corners */
+    width: 300px;
+    /* Adjust image width */
+    overflow: hidden;
+    /* Ensure rounded corners */
+    border-radius: 8px;
+    /* Adjusted rounded corners */
 }
 
 .rounded-image {
-    width: 100%; /* Ensure image fills container */
-    display: block; /* Remove any spacing below image */
+    width: 100%;
+    /* Ensure image fills container */
+    display: block;
+    /* Remove any spacing below image */
 }
 
 .project-text {
-    flex: 1; /* Take remaining space */
-    padding-left: 20px; /* Space between image and text */
+    flex: 1;
+    /* Take remaining space */
+    padding-left: 20px;
+    /* Space between image and text */
 }
 
 .project-text h3 {
     /* font-family: 'Courier New', Courier, monospace; */
-    color: #FFFFFF; /* Text color */
-    font-size: 1.5em; /* Header font size */
-    margin-bottom: 10px; /* Space below header */
+    color: #FFFFFF;
+    /* Text color */
+    font-size: 1.5em;
+    /* Header font size */
+    margin-bottom: 10px;
+    /* Space below header */
 }
 
 .project-text p {
-    color: #E0E0E0; /* Text color */
-    font-size: 1em; /* Text font size */
-    line-height: 1.6; /* Line height for readability */
+    color: #E0E0E0;
+    /* Text color */
+    font-size: 1em;
+    /* Text font size */
+    line-height: 1.6;
+    /* Line height for readability */
 }
 
 .project-text h3.special-font {
     font-family: 'Courier New', Courier, monospace;
     /* font-family: 'Josefin Sans', monospace; */
-    font-size: 1.5em; /* Header font size */
-    margin: 0 0 10px; /* Margin for the header */
+    font-size: 1.5em;
+    /* Header font size */
+    margin: 0 0 10px;
+    /* Margin for the header */
 }
 
 .project-text h3 {
-    font-size: 1.5em; /* Header font size */
-    margin: 0 0 10px; /* Margin for the header */
+    font-size: 1.5em;
+    /* Header font size */
+    margin: 0 0 10px;
+    /* Margin for the header */
 }
+
 .project-buttons {
-    margin-top: 15px; /* Space above buttons */
+    margin-top: 15px;
+    /* Space above buttons */
 }
 
 .project-button {
     display: inline-block;
-    background-color: #333; /* Dark background */
-    color: #FFFFFF; /* White text */
+    background-color: #333;
+    /* Dark background */
+    color: #FFFFFF;
+    /* White text */
     text-align: center;
     padding: 10px 30px;
     margin-right: 10px;
     text-decoration: none;
     border-radius: 5px;
-    border: 1px solid #666; /* Darker border */
+    border: 1px solid #666;
+    /* Darker border */
     transition: background-color 0.3s ease;
 }
 
 .project-button:hover {
-    background-color: #555; /* Darker background on hover */
+    background-color: #555;
+    /* Darker background on hover */
 }
 
 .button-icon {
-    width: 20px; /* Adjust icon size */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 5px; /* Space between icon and text */
-    vertical-align: middle; /* Align icon vertically */
+    width: 20px;
+    /* Adjust icon size */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 5px;
+    /* Space between icon and text */
+    vertical-align: middle;
+    /* Align icon vertically */
 }
 
 
 .github-link {
-    display: block; /* Ensure entire logo is clickable */
-    margin-top: 10px; /* Space above GitHub logo */
+    display: block;
+    /* Ensure entire logo is clickable */
+    margin-top: 10px;
+    /* Space above GitHub logo */
 }
 
 .github-logo {
-    width: 60px; /* Adjust logo size */
-    height: auto; /* Maintain aspect ratio */
+    width: 60px;
+    /* Adjust logo size */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 /* Media query for mobile screens */
 @media screen and (max-width: 768px) {
     .project-details {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: flex-start; /* Align items to the start */
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: flex-start;
+        /* Align items to the start */
     }
 
     .project-text {
-        padding-left: 0; /* Remove left padding */
-        padding-top: 15px; /* Add top padding for spacing */
+        padding-left: 0;
+        /* Remove left padding */
+        padding-top: 15px;
+        /* Add top padding for spacing */
     }
 
     .project-buttons {
@@ -221,8 +271,10 @@ main {
     }
 
     .project-button {
-        margin-bottom: 10px; /* Space between buttons */
-        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px;
+        /* Space between buttons */
+        margin-right: 0;
+        /* Remove right margin */
     }
 }
 
@@ -230,15 +282,18 @@ main {
 /* General styles */
 
 #lichess-playing-card {
-    background-color: #1C1C1C;  /* Dark grey background */
+    background-color: #1C1C1C;
+    /* Dark grey background */
     padding: 20px;
     margin: 20px 0;
     width: 80%;
-    border: 1px solid #E0E0E0;  /* Light grey border */
+    border: 1px solid #E0E0E0;
+    /* Light grey border */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #FFFFFF;
-    position: relative; /* Ensure the block is the reference point for positioning */
+    position: relative;
+    /* Ensure the block is the reference point for positioning */
 }
 
 #lichess-playing-card h2 {
@@ -250,19 +305,29 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allow wrapping of elements */
+    flex-wrap: wrap;
+    /* Allow wrapping of elements */
 }
 
 #lichess-board-container {
     flex: 1;
     padding-right: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 
 #lichess-board {
-    width: 300px; /* Adjust size as needed */
+    width: 300px;
+    /* Adjust size as needed */
     height: 300px;
-    background-color: #F0D9B5; /* Light brown background to simulate a chess board */
-    border: 2px solid #333; /* Dark border */
+    background-color: #F0D9B5;
+    /* Light brown background to simulate a chess board */
+    border: 2px solid #333;
+    /* Dark border */
 }
 
 #chess-game-details {
@@ -313,9 +378,6 @@ button:hover {
 }
 
 #lichess-info-box {
-    position: absolute;
-    bottom: 10px; /* Adjust as needed */
-    right: 6.5%; /* Adjust as needed */
     background-color: #3a3a3a;
     padding: 10px;
     border-radius: 8px;
@@ -323,22 +385,33 @@ button:hover {
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 50%; /* Adjust width as needed */
+    align-items: center;
 }
 
 #lichess-status {
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between dot, username, and button */
+    gap: 10px;
+    /* Space between dot, username, and button */
     margin-bottom: 10px;
+    /* width: 50%; */
+}
+
+#lichess-ratings {
+    display: flex;
+    /* width: 50%; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* gap: 40px; */
+    justify-content: space-between;
 }
 
 #lichess-status-dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: transparent; /* Default transparent */
+    background-color: transparent;
+    /* Default transparent */
 }
 
 #lichess-username {
@@ -362,88 +435,121 @@ button:hover {
     background-color: #282727;
 }
 
-#lichess-ratings {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-}
-
 .lichess-rating {
     display: flex;
     align-items: center;
-    gap: 5px; /* Space between icon and text */
-    margin-bottom: 10px; /* Space between rows */
+    gap: 5px;
+    /* Space between icon and text */
+    margin: 0 10px 10px 10px;
 }
 
 .lichess-rating i {
-    color: #FFD700; /* Gold color for icons */
+    color: #FFD700;
+    /* Gold color for icons */
     flex-wrap: wrap;
 }
 
 #plot-container {
-    width: 100%;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    overflow-y: hidden; /* Disable vertical scrolling */
+    width: inherit;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    /* Disable vertical scrolling */
 }
 
 #plot {
-    width: 70%;
-    height: 400px; /* Adjust height as needed */
-    padding-bottom: 10%;
+    /* width: 70%; */
+    height: 400px;
+    /* Adjust height as needed */
+    padding-bottom: 20px;
     /* padding-left: 10%; */
 }
 
 /* Media query for mobile screens */
 @media screen and (max-width: 768px) {
     .lichess-content {
-        flex-direction: column; /* Stack elements vertically */
+        flex-direction: column;
+        /* Stack elements vertically */
         align-items: center;
     }
 
     #lichess-board-container {
-        width: 100%;
-        padding-right: 500px; /* Remove right padding */
-        margin-bottom: 20px; /* Space below board */
-        /* align-items: center; */
+        flex: 1;
+        padding-right: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    #right-column {
+        max-width: 100%;
     }
 
     #myBoard {
-        width: 100%; /* Make the board responsive */
-        max-width: 250px; /* Maximum width for the board */
-        padding-left: 30px
+        width: 100%;
+        /* Make the board responsive */
+        max-width: 250px;
+        /* Maximum width for the board */
+        /* padding-left: 30px */
     }
 
     #plot-container {
-        width: 400px; 
-        height: 520px; 
+        /* width: 400px;  */
+        /* height: 520px; */
         /* width: 100%; */
-        margin-bottom: 5px; /* Space below plot */
-        overflow-x: auto; /* Enable horizontal scrolling */
-        overflow-y: hidden; /* Disable vertical scrolling */
+        margin-bottom: 5px;
+        /* Space below plot */
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        overflow-y: hidden;
+        /* Disable vertical scrolling */
         margin-right: auto;
     }
 
     #lichess-info-box {
-        position: relative; /* Make it relative for the new order */
-        bottom: 0; /* Remove bottom positioning */
-        right: 0; /* Remove right positioning */
-        width: 100%; /* Full width */
-        margin-top: 5px; /* Space above info box */
-        padding-right: 500px;
+        position: relative;
+        /* Make it relative for the new order */
+        bottom: 0;
+        /* Remove bottom positioning */
+        right: 0;
+        /* Remove right positioning */
+        /* width: 100%; */
+        /* Full width */
+        margin-top: 5px;
+        /* Space above info box */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* padding-right: 500px; */
+    }
+
+
+    .lichess-rating {
+        min-width: 100px;
+        /* Each rating takes almost half the width */
+        justify-content: center;
+        /* Center items */
+        margin: 0 0px 10px 0px;
+    }
+
+    #lichess-status {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        /* Space between dot, username, and button */
+        margin-bottom: 10px;
+        /* width: 100%; */
     }
 
     #lichess-ratings {
         display: flex;
+        width: inherit;
+        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between; /* Space between columns */
-    }
-
-    .lichess-rating {
-        width: 50%; /* Each rating takes almost half the width */
-        justify-content: center; /* Center items */
-        margin-bottom: 10px; /* Space between rows */
-        
+        /* gap: 40px; */
+        justify-content: center;
     }
 
 
@@ -488,10 +594,14 @@ button:hover {
 }
 
 .publication-text p {
-    color: #E0E0E0; /* Text color */
-    font-size: 1em; /* Text font size */
-    line-height: 1.6; /* Line height for readability */
-    padding-left: 10px; /* Space between image and text */
+    color: #E0E0E0;
+    /* Text color */
+    font-size: 1em;
+    /* Text font size */
+    line-height: 1.6;
+    /* Line height for readability */
+    padding-left: 10px;
+    /* Space between image and text */
 }
 
 .publication-text b {
@@ -541,7 +651,8 @@ button:hover {
         width: 100%;
         height: auto;
         margin-right: 0;
-        margin-bottom: 10px; /* Space below the image */
+        margin-bottom: 10px;
+        /* Space below the image */
     }
 
     .publication-text {
@@ -550,8 +661,10 @@ button:hover {
     }
 
     .publication-text p {
-        padding-left: 0; /* Remove padding */
-        text-align: justify; /* Justify text */
+        padding-left: 0;
+        /* Remove padding */
+        text-align: justify;
+        /* Justify text */
     }
 }
 
@@ -567,19 +680,23 @@ button:hover {
 }
 
 .contact-map {
-    width: 600px; /* Adjust map width */
-    margin-right: 20px; /* Add spacing between map and details */
+    width: 600px;
+    /* Adjust map width */
+    margin-right: 20px;
+    /* Add spacing between map and details */
 }
 
 .contact-map iframe {
     width: 100%;
-    height: 450px; /* Adjust map height */
+    height: 450px;
+    /* Adjust map height */
     border: 1px solid #E0E0E0;
     border-radius: 8px;
 }
 
 .contact-details {
-    width: 40%; /* Adjust details width */
+    width: 40%;
+    /* Adjust details width */
 }
 
 .contact-details h2 {
@@ -609,51 +726,66 @@ button:hover {
 }
 
 .social-media-links li a {
-    color: #E0E0E0;  /* Light grey links */
+    color: #E0E0E0;
+    /* Light grey links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .social-media-links li a img {
-    width: 40px; /* Adjust icon size */
-    height: auto; /* Maintain aspect ratio */
+    width: 40px;
+    /* Adjust icon size */
+    height: auto;
+    /* Maintain aspect ratio */
     border-radius: 50%;
     transition: transform 0.3s ease;
 }
 
 .social-media-links li a img:hover {
-    transform: scale(1.1); /* Scale up on hover */
+    transform: scale(1.1);
+    /* Scale up on hover */
 }
 
 /* Media query for mobile screens */
 @media screen and (max-width: 768px) {
     .contact-section {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center align items */
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        /* Center align items */
     }
 
     .contact-details {
-        width: 100%; /* Full width for details */
-        margin-bottom: 20px; /* Space below details */
+        width: 100%;
+        /* Full width for details */
+        margin-bottom: 20px;
+        /* Space below details */
     }
 
     .contact-map {
-        width: 100%; /* Full width for map */
+        width: 100%;
+        /* Full width for map */
     }
 
-    .contact-details h2, .contact-details p, .social-media-links {
-        margin-left: 0; /* Remove left margin */
-        text-align: center; /* Center align text */
+    .contact-details h2,
+    .contact-details p,
+    .social-media-links {
+        margin-left: 0;
+        /* Remove left margin */
+        text-align: center;
+        /* Center align text */
     }
 }
 
 
 
 footer {
-    background-color: #1C1C1C;  /* Dark grey background */
+    background-color: #1C1C1C;
+    /* Dark grey background */
     padding: 10px 20px;
     text-align: center;
-    border-top: 1px solid #E0E0E0;  /* Light grey border */
+    border-top: 1px solid #E0E0E0;
+    /* Light grey border */
 }
 
 footer ul {
@@ -668,19 +800,24 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #E0E0E0;  /* Light grey links */
+    color: #E0E0E0;
+    /* Light grey links */
     text-decoration: none;
 }
 
 footer ul li a:hover {
-    color: #FFFFFF;  /* White on hover */
+    color: #FFFFFF;
+    /* White on hover */
 }
 
 /* Gradient text color for changing text */
 #typed-text {
-    background: linear-gradient(45deg, #2196F3, #9C27B0, #F44336); /* Blue to purple to red */
-    -webkit-background-clip: text; /* Apply gradient as text color */
-    -webkit-text-fill-color: transparent; /* Make original text transparent */
+    background: linear-gradient(45deg, #2196F3, #9C27B0, #F44336);
+    /* Blue to purple to red */
+    -webkit-background-clip: text;
+    /* Apply gradient as text color */
+    -webkit-text-fill-color: transparent;
+    /* Make original text transparent */
 }
 
 @media only screen and (max-width: 600px) {

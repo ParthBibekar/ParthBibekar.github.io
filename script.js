@@ -172,6 +172,7 @@ async function plotRatingHistory(username) {
             xanchor: 'center',  // Anchor the legend by its center
             y: 1.15  // Position the legend below the plot
         },
+        width: 580,
         // margin: {
             b: 100  // Adjust the bottom margin to accommodate the legend
         // }

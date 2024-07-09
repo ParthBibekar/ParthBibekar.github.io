@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 // Lichess status URLs
 var lichessStatusURL = "https://lichess.org/api/users/status?ids=Parth_Bibekar";
 var lichessDataURL = "https://lichess.org/api/user/Parth_Bibekar";
@@ -165,7 +164,17 @@ async function plotRatingHistory(username) {
             gridcolor: '#444444'
         },
         paper_bgcolor: '#1e1e1e',
-        plot_bgcolor: '#1e1e1e'
+        plot_bgcolor: '#1e1e1e',
+
+        legend: {
+            orientation: 'h',  // Set the orientation to horizontal
+            x: 0.5,  // Center the legend horizontally
+            xanchor: 'center',  // Anchor the legend by its center
+            y: 1.15  // Position the legend below the plot
+        },
+        // margin: {
+            b: 100  // Adjust the bottom margin to accommodate the legend
+        // }
     };
 
     // Plot with Plotly.js

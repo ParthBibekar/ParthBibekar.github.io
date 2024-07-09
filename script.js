@@ -9,6 +9,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// nav bar scroll
+
+window.onscroll = function() {stickyNavbar()};
+
+var navbar = document.querySelector("nav");
+var sticky = navbar.offsetTop;
+
+function stickyNavbar() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
+
 // Lichess status URLs
 var lichessStatusURL = "https://lichess.org/api/users/status?ids=Parth_Bibekar";
 var lichessDataURL = "https://lichess.org/api/user/Parth_Bibekar";

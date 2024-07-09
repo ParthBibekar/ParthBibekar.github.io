@@ -1,0 +1,549 @@
+body {
+    background-color: #121212;  /* Dark grey background */
+    color: #E0E0E0;  /* Light grey text */
+    font-family: 'Courier New', Courier, monospace;
+    /* font-family: "Raleway", sans-serif;  */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1C1C1C;  /* Dark grey background */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #E0E0E0;  /* Light grey border */
+}
+
+header h1.professional-font {
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Josefin Sans', monospace;
+    /* font-family: "Raleway", sans-serif; */
+    font-weight: 700; /* Bold weight */
+    font-size: 2.5em;
+    color: #FFFFFF; /* White text */
+}
+
+header p {
+    font-size: 1.5em;
+    color: #E0E0E0;  /* Light grey text */
+    display: inline-block; /* Allow the <p> to occupy only the width of its content */
+    white-space: nowrap; /* Ensure text does not wrap */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #E0E0E0;  /* Light grey links */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF;  /* White on hover */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block {
+    background-color: #1C1C1C;  /* Dark grey background */
+    padding: 20px;
+    margin: 20px 0;
+    width: 80%;
+    border: 1px solid #E0E0E0;  /* Light grey border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Me Section */
+#about {
+    margin-bottom: 40px;
+}
+
+#about h2, #about h3 {
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.education {
+    margin-top: 20px;
+}
+
+.degree {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.degree .education-logo {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.degree .details p {
+    margin: 5px;
+    color: #E0E0E0;
+}
+
+.degree .details p:first-child {
+    font-weight: bold;
+}
+
+
+.project {
+    background-color: #2A2A2A;  /* Darker grey for projects */
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;  /* Light grey border */
+}
+
+.project-details {
+    display: flex;
+    align-items: center;
+}
+
+.project-image {
+    width: 300px; /* Adjust image width */
+    overflow: hidden; /* Ensure rounded corners */
+    border-radius: 8px; /* Adjusted rounded corners */
+}
+
+.rounded-image {
+    width: 100%; /* Ensure image fills container */
+    display: block; /* Remove any spacing below image */
+}
+
+.project-text {
+    flex: 1; /* Take remaining space */
+    padding-left: 20px; /* Space between image and text */
+}
+
+.project-text h3 {
+    /* font-family: 'Courier New', Courier, monospace; */
+    color: #FFFFFF; /* Text color */
+    font-size: 1.5em; /* Header font size */
+    margin-bottom: 10px; /* Space below header */
+}
+
+.project-text p {
+    color: #E0E0E0; /* Text color */
+    font-size: 1em; /* Text font size */
+    line-height: 1.6; /* Line height for readability */
+}
+
+.project-text h3.special-font {
+    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Josefin Sans', monospace; */
+    font-size: 1.5em; /* Header font size */
+    margin: 0 0 10px; /* Margin for the header */
+}
+
+.project-text h3 {
+    font-size: 1.5em; /* Header font size */
+    margin: 0 0 10px; /* Margin for the header */
+}
+.project-buttons {
+    margin-top: 15px; /* Space above buttons */
+}
+
+.project-button {
+    display: inline-block;
+    background-color: #333; /* Dark background */
+    color: #FFFFFF; /* White text */
+    text-align: center;
+    padding: 10px 30px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #666; /* Darker border */
+    transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+.button-icon {
+    width: 20px; /* Adjust icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon vertically */
+}
+
+
+.github-link {
+    display: block; /* Ensure entire logo is clickable */
+    margin-top: 10px; /* Space above GitHub logo */
+}
+
+.github-logo {
+    width: 60px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Add styles for Lichess card */
+#lichess-playing-card {
+    background-color: #1C1C1C;  /* Dark grey background */
+    padding: 20px;
+    margin: 20px 0;
+    width: 80%;
+    border: 1px solid #E0E0E0;  /* Light grey border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    position: relative; /* Ensure the block is the reference point for positioning */
+}
+
+#lichess-playing-card h2 {
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.lichess-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#lichess-board-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+#lichess-board {
+    width: 300px; /* Adjust size as needed */
+    height: 300px;
+    background-color: #F0D9B5; /* Light brown background to simulate a chess board */
+    border: 2px solid #333; /* Dark border */
+}
+
+#lichess-board-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+#chess-game-details {
+    color: #E0E0E0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#chess-game-details p {
+    color: #E0E0E0;
+    margin: 5px 0;
+}
+
+
+#chess-game-details p:first-child {
+    /* color: #E0E0E0; */
+    text-decoration: underline;
+}
+
+#chess-game-details p:nth-child(2), 
+#chess-game-details p:nth-child(3) {
+    font-size: 0.7em;
+    color: #a9a9a9;
+}
+
+#myBoard {
+    width: 400px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px;
+    background-color: #3a3a3a;
+    color: #cfcfcf;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#lichess-info-box {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    right: 6.5%; /* Adjust as needed */
+    background-color: #3a3a3a;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* width: max-content; */
+    width: 50%; /* Adjust width as needed */
+}
+
+#lichess-status {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between dot, username, and button */
+    margin-bottom: 10px;
+}
+
+#lichess-status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent; /* Default transparent */
+}
+
+#lichess-username {
+    font-weight: bold;
+    padding: 5px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    
+}
+
+#challenge-me {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #595757;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#challenge-me:hover {
+    background-color: #282727;
+}
+
+#lichess-ratings {
+    display: flex;
+    gap: 40px;
+}
+
+.lichess-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lichess-rating i {
+    color: #FFD700; /* Gold color for icons */
+}
+
+#plot-container {
+    width: 100%;
+}
+
+#plot {
+    width: 80%;
+    height: 400px; /* Adjust height as needed */
+    padding-bottom: 10%;
+    padding-left: 10%;
+}
+
+
+/* publications */
+
+
+.publication-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.publication-image {
+    flex: 0 0 auto;
+    width: 180px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+}
+
+.rounded-image {
+    border-radius: 8px;
+}
+
+.image-caption {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.publication-text {
+    flex: 1;
+}
+
+.publication-text p {
+    color: #E0E0E0; /* Text color */
+    font-size: 1em; /* Text font size */
+    line-height: 1.6; /* Line height for readability */
+    padding-left: 10px; /* Space between image and text */
+}
+
+.publication-text b {
+    font-weight: bold;
+}
+
+.publication-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.publication-button {
+    display: inline-block;
+    background-color: #333;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #666;
+    transition: background-color 0.3s ease;
+}
+
+.publication-button:hover {
+    background-color: #555;
+}
+
+.button-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+/* Styles for Contact page */
+
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.contact-map {
+    width: 600px; /* Adjust map width */
+    margin-right: 20px; /* Add spacing between map and details */
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 450px; /* Adjust map height */
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+}
+
+.contact-details {
+    width: 40%; /* Adjust details width */
+}
+
+.contact-details h2 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.contact-details p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.social-media-links {
+    font-family: 'Courier New', Courier, monospace;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.social-media-links li {
+    display: inline-block;
+}
+
+.social-media-links li a {
+    color: #E0E0E0;  /* Light grey links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media-links li a img {
+    width: 40px; /* Adjust icon size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-media-links li a img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+
+
+footer {
+    background-color: #1C1C1C;  /* Dark grey background */
+    padding: 10px 20px;
+    text-align: center;
+    border-top: 1px solid #E0E0E0;  /* Light grey border */
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #E0E0E0;  /* Light grey links */
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #FFFFFF;  /* White on hover */
+}
+
+/* Gradient text color for changing text */
+#typed-text {
+    background: linear-gradient(45deg, #2196F3, #9C27B0, #F44336); /* Blue to purple to red */
+    -webkit-background-clip: text; /* Apply gradient as text color */
+    -webkit-text-fill-color: transparent; /* Make original text transparent */
+}

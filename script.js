@@ -183,3 +183,4 @@ async function plotRatingHistory(username) {
 
 // Call the function to plot rating history for a specific user
 plotRatingHistory('Parth_Bibekar');
+

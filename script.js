@@ -1,3 +1,4 @@
+// typing text animation
 document.addEventListener('DOMContentLoaded', () => {
     const typed = new Typed('#typed-text', {
         strings: ['student', 'researcher', 'chess enthusiast', 'avid reader'],
@@ -9,8 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// nav bar scroll
+// toggle light and dark mode
+const checkbox = document.getElementById('checkbox');
+const body = document.body;
 
+checkbox.addEventListener('change', function() {
+  body.classList.toggle('light-mode');
+});
+
+
+// nav bar scroll
 window.onscroll = function() {stickyNavbar()};
 
 var navbar = document.querySelector("nav");

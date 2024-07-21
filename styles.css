@@ -9,6 +9,21 @@ body {
     padding: 0;
 }
 
+body.light-mode {
+    background-color: #FFFFFF; /* White background */
+    color: #000000; /* Black text */
+}
+
+a.custom-link {
+    color: #807f81; /* A more visible color in light mode */
+    text-decoration: underline; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a.custom-link:hover {
+    color: #7474f1; /* Darker blue on hover */
+}
+
 header {
     background-color: #1C1C1C;
     /* Dark grey background */
@@ -39,18 +54,46 @@ header p {
     /* Ensure text does not wrap */
 }
 
+/* Light Theme for Header */
+body.light-mode header {
+    background-color: #F5F5F5; /* Light grey background */
+    border-bottom: 1px solid #000000; /* Black border */
+}
+
+body.light-mode header h1.professional-font {
+    color: #000000; /* Black text */
+}
+
+body.light-mode header p {
+    color: #333333; /* Dark grey text */
+}
 
 nav {
     background-color: #1C1C1C;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding-left: 100px;
+    /* padding: 0; */
     display: flex;
     justify-content: center;
+    margin: 0;
+    flex-grow: 1; /* Allow ul to take up remaining space */
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        padding-left: 0;
+        /* Remove left padding */
+        justify-content: center;
+        /* Center the items */
+    }
+    
 }
 
 nav ul li {
@@ -65,6 +108,237 @@ nav ul li a {
 nav ul li a:hover {
     color: #FFFFFF;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.daynight {
+    margin-left: auto; /* Push the toggle button to the far right */
+}
+
+
+/* Light Theme for Navbar */
+body.light-mode nav {
+    background-color: #F5F5F5; /* Light grey background */
+}
+
+body.light-mode nav ul li a {
+    color: #333333; /* Dark grey text */
+}
+
+body.light-mode nav ul li a:hover {
+    color: #000000; /* Black text on hover */
+}
+
+
+/* theme toggle animation */
+#checkbox {
+    display: none;
+}
+.toggle {
+    height: 40px; /* Reduced from 80px */
+    width: 100px; /* Reduced from 200px */
+    border-radius: 9999px;
+    left: -25px;
+    background: linear-gradient(to bottom, #6ec8ff, #1f73a7);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #0000003d; /* Adjusted proportionally */
+}
+.mountains {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: #1d7371;
+    transition: all 0.5s ease-in-out;
+    clip-path: polygon(
+        0% 80%,
+        25% 50%,
+        40% 70%,
+        60% 35%,
+        65% 45%,
+        80% 20%,
+        100% 80%,
+        100% 100%,
+        0% 100%
+    );
+}
+.cloud {
+    height: 4px; /* Reduced from 8px */
+    width: 9px; /* Reduced from 18px */
+    border-radius: 9999px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    filter: opacity(0.5);
+}
+.sea {
+    height: 55px; /* Reduced from 200px */
+    width: 150%; /* Reduced from 300% */
+    border-radius: 50%;
+    position: absolute;
+    right: 50%;
+    bottom: -250%; /* Adjusted proportionally */
+    transform: translateX(50%);
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(
+        to bottom,
+        #3f75cc,
+        #06063b,
+        #06063b,
+        #06063b,
+        #06063b
+    );
+}
+.sea::before {
+    content: "";
+    height: 12.5px; /* Reduced from 25px */
+    width: 7.5px; /* Reduced from 15px */
+    background-color: rgba(254, 254, 254, 0.34);
+    filter: blur(5px);
+    position: absolute;
+    top: 2%;
+    left: 43%;
+}
+.star {
+    height: 1px; /* Reduced from 2px */
+    width: 1px; /* Reduced from 2px */
+    position: absolute;
+    top: -50%;
+    right: 15%;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    filter: blur(0.8px);
+    border-radius: 50%;
+}
+.star::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -50%;
+    right: 20px;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+}
+.star::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+}
+.cloud::before {
+    content: "";
+    height: 5px; /* Reduced from 10px */
+    width: 5px; /* Reduced from 10px */
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: -50%;
+    right: 50%;
+    transform: translateX(50%);
+}
+#checkbox:checked + .toggle {
+    background: linear-gradient(to bottom, #036daf, #003d63);
+}
+.toggle::before {
+    content: "";
+    height: 20px; /* Reduced from 40px */
+    width: 20px; /* Reduced from 40px */
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    border-radius: 50%;
+    background-color: #ffd34d;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 7.5px #fef95fc3; /* Adjusted proportionally */
+}
+.toggle::after {
+    content: "";
+    height: 17.5px; /* Reduced from 35px */
+    width: 17.5px; /* Reduced from 35px */
+    position: absolute;
+    top: 10%;
+    left: -60%;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 5px #ffffff88; /* Adjusted proportionally */
+}
+#checkbox:checked + .toggle::before {
+    transform: translateX(280%);
+}
+#checkbox:checked + .toggle::after {
+    transform: translateX(480%);
+}
+#checkbox:checked + .toggle .mountains {
+    background-color: #05021a;
+    transform: translateY(100%);
+}
+#checkbox:checked + .toggle .sea {
+    background-color: #05021a;
+    bottom: -105%; /* Adjusted proportionally */
+}
+#checkbox:checked + .toggle .star {
+    background-color: #fff; /* Ensure stars remain white */
+    transform: rotate(10deg);
+    top: 20%;
+}
+#checkbox:checked + .toggle .cloud {
+    background-color: #f0f0f0; /* Change cloud color to a lighter shade */
+}
+
+@media (max-width: 600px) {
+    .toggle {
+        height: 30px; /* Smaller height for mobile */
+        width: 80px; /* Smaller width for mobile */
+        left: -10px; /* Adjusted position */
+    }
+    .toggle::before {
+        height: 15px; /* Adjusted size for mobile */
+        width: 15px; /* Adjusted size for mobile */
+        right: 25%;
+        box-shadow: 0 0 5px #fef95fc3; /* Adjusted shadow for mobile */
+    }
+    .toggle::after {
+        height: 13.5px; /* Adjusted size for mobile */
+        width: 13.5px; /* Adjusted size for mobile */
+        box-shadow: 0 0 4px #ffffff88; /* Adjusted shadow for mobile */
+    }
+    .cloud {
+        height: 3px; /* Adjusted size for mobile */
+        width: 6px; /* Adjusted size for mobile */
+    }
+    .cloud::before {
+        height: 3px; /* Adjusted size for mobile */
+        width: 3px; /* Adjusted size for mobile */
+    }
+    .sea {
+        height: 40px; /* Adjusted size for mobile */
+        bottom: -200%; /* Adjusted position for mobile */
+    }
+    .sea::before {
+        height: 10px; /* Adjusted size for mobile */
+        width: 6px; /* Adjusted size for mobile */
+    }
+    .star {
+        height: 0.75px; /* Adjusted size for mobile */
+        width: 0.75px; /* Adjusted size for mobile */
+    }
+}
+
+
 
 .sticky {
     position: fixed;
@@ -90,6 +364,13 @@ main {
     /* Light grey border */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Light Theme for Block */
+body.light-mode .block {
+    background-color: #F5F5F5; /* Light grey background */
+    border: 1px solid #333333; /* Dark grey border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
 }
 
 /* About Me Section */
@@ -129,6 +410,14 @@ main {
     font-weight: bold;
 }
 
+body.light-mode #about h2,
+body.light-mode #about h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body.light-mode .degree .details p {
+    color: #333333; /* Dark grey text */
+}
 
 .project {
     background-color: #2A2A2A;
@@ -253,6 +542,30 @@ main {
     /* Adjust logo size */
     height: auto;
     /* Maintain aspect ratio */
+}
+
+/* Light Theme for Project Section */
+body.light-mode .project {
+    background-color: #F5F5F5; /* Light grey background */
+    border: 1px solid #333333; /* Dark grey border */
+}
+
+body.light-mode .project-text h3 {
+    color: #000000; /* Black text */
+}
+
+body.light-mode .project-text p {
+    color: #333333; /* Dark grey text */
+}
+
+body.light-mode .project-button {
+    background-color: #DDDDDD; /* Light background */
+    color: #000000; /* Black text */
+    border: 1px solid #999999; /* Grey border */
+}
+
+body.light-mode .project-button:hover {
+    background-color: #BBBBBB; /* Darker background on hover */
 }
 
 /* Media query for mobile screens */
@@ -472,6 +785,55 @@ button:hover {
     /* padding-left: 10%; */
 }
 
+
+/* Light Theme for Lichess Playing Card */
+body.light-mode #lichess-playing-card {
+    background-color: #F5F5F5; /* Light grey background */
+    border: 1px solid #333333; /* Dark grey border */
+    color: #000000; /* Black text */
+}
+
+body.light-mode #chess-game-details {
+    color: #333333; /* Dark grey text */
+}
+
+body.light-mode #chess-game-details p {
+    color: #333333; /* Dark grey text */
+}
+
+body.light-mode button {
+    background-color: #DDDDDD; /* Light background */
+    color: #000000; /* Black text */
+    border: 1px solid #999999; /* Grey border */
+}
+
+body.light-mode button:hover {
+    background-color: #BBBBBB; /* Darker background on hover */
+}
+
+body.light-mode #lichess-info-box {
+    background-color: #DDDDDD; /* Light background */
+    color: #000000; /* Black text */
+}
+
+body.light-mode #lichess-username {
+    background-color: #DDDDDD; /* Light background */
+    color: #000000; /* Black text */
+}
+
+body.light-mode #challenge-me {
+    background-color: #BBBBBB; /* Light grey background */
+    color: #000000; /* Black text */
+}
+
+body.light-mode #challenge-me:hover {
+    background-color: #999999; /* Darker grey background on hover */
+}
+
+body.light-mode .lichess-rating i {
+    color: #333333; /* Dark grey color for icons */
+}
+
 /* Media query for mobile screens */
 @media screen and (max-width: 768px) {
     #lichess-playing-card {
@@ -663,6 +1025,11 @@ button:hover {
     vertical-align: middle;
 }
 
+/* Light Theme for Publication Text */
+body.light-mode .publication-text p {
+    color: #333333; /* Dark grey text color */
+}
+
 /* Media query for mobile screens */
 @media screen and (max-width: 768px) {
     .publication-details {
@@ -748,7 +1115,7 @@ button:hover {
 }
 
 .social-media-links li a {
-    color: #E0E0E0;
+    /* color: #E0E0E0; */
     /* Light grey links */
     text-decoration: none;
     transition: color 0.3s ease;
@@ -830,6 +1197,26 @@ footer ul li a {
 footer ul li a:hover {
     color: #FFFFFF;
     /* White on hover */
+}
+
+/* Light mode styles */
+body.light-mode footer {
+    background-color: #F0F0F0;
+    /* Light grey background */
+    padding: 10px 20px;
+    text-align: center;
+    border-top: 1px solid #CCCCCC;
+    /* Light grey border */
+}
+
+body.light-mode footer ul li a {
+    color: #333333;
+    /* Dark grey links */
+}
+
+body.light-mode footer ul li a:hover {
+    color: #000000;
+    /* Black on hover */
 }
 
 /* Gradient text color for changing text */

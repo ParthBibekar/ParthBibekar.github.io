@@ -1019,12 +1019,10 @@ body.light-mode .publication-text p {
 
 
 footer {
-    background-color: #1C1C1C;
-    /* Dark grey background */
+    background-color: #1C1C1C; /* Dark grey background */
     padding: 10px 20px;
     text-align: center;
-    border-top: 1px solid #E0E0E0;
-    /* Light grey border */
+    border-top: 1px solid #E0E0E0; /* Light grey border */
 }
 
 footer ul {
@@ -1032,6 +1030,7 @@ footer ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap into multiple rows */
 }
 
 footer ul li {
@@ -1039,15 +1038,29 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #E0E0E0;
-    /* Light grey links */
+    color: #E0E0E0; /* Light grey links */
     text-decoration: none;
 }
 
 footer ul li a:hover {
-    color: #FFFFFF;
-    /* White on hover */
+    color: #FFFFFF; /* White on hover */
 }
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    footer ul {
+        flex-direction: row; /* Keep the default row direction */
+        justify-content: center;
+    }
+
+    footer ul li {
+        width: 50%; /* Each item takes half the width */
+        text-align: center;
+        margin: 5px 0; /* Adjust margin for spacing */
+    }
+}
+
+
 
 /* Light mode styles */
 body.light-mode footer {

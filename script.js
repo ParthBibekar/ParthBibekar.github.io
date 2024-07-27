@@ -10,12 +10,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// toggle light and dark mode
+// Get elements
 const checkbox = document.getElementById('checkbox');
 const body = document.body;
 
+// Function to apply the saved theme
+function applyTheme(theme) {
+    body.classList.toggle('light-mode', theme === 'light');
+}
+
+// Function to save the current theme to localStorage
+function saveTheme(theme) {
+    localStorage.setItem('theme', theme);
+}
+
+// Check for saved theme on page load and apply it
+window.addEventListener('DOMContentLoaded', (event) => {
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    applyTheme(savedTheme);
+    checkbox.checked = savedTheme === 'light';
+});
+
+// Toggle theme and save preference
 checkbox.addEventListener('change', function() {
-  body.classList.toggle('light-mode');
+    const theme = checkbox.checked ? 'light' : 'dark';
+    body.classList.toggle('light-mode', theme === 'light');
+    saveTheme(theme);
 });
 
 

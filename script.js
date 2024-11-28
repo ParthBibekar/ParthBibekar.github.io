@@ -55,8 +55,8 @@ function stickyNavbar() {
 
 
 // Lichess status URLs
-var lichessStatusURL = "https://lichess.org/api/users/status?ids=Parth_Bibekar";
-var lichessDataURL = "https://lichess.org/api/user/Parth_Bibekar";
+var lichessStatusURL = "https://lichess.org/api/users/status?ids=Parth_b";
+var lichessDataURL = "https://lichess.org/api/user/Parth_b";
 
 // Function to fetch JSON data
 function getJSON(url, callback) {

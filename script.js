@@ -1,7 +1,7 @@
 // typing text animation
 document.addEventListener('DOMContentLoaded', () => {
     const typed = new Typed('#typed-text', {
-        strings: ['student', 'researcher', 'chess enthusiast', 'avid reader'],
+        strings: ['student', 'researcher', 'chess fan', 'avid reader'],
         typeSpeed: 100, // Typing speed in milliseconds
         backSpeed: 50, // Deleting speed in milliseconds
         loop: true, // Loop infinitely

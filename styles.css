@@ -1,16 +1,16 @@
 body {
     background-color: #121212;
     /* Dark grey background */
-    color: #E0E0E0;
+    color: #e0e0e0;
     /* Light grey text */
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     /* font-family: "Raleway", sans-serif;  */
     margin: 0;
     padding: 0;
 }
 
 body.light-mode {
-    background-color: #FFFFFF; /* White background */
+    background-color: #ffffff; /* White background */
     color: #000000; /* Black text */
 }
 
@@ -25,28 +25,28 @@ a.custom-link:hover {
 }
 
 header {
-    background-color: #1C1C1C;
+    background-color: #1c1c1c;
     /* Dark grey background */
     padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #E0E0E0;
+    border-bottom: 1px solid #e0e0e0;
     /* Light grey border */
 }
 
 header h1.professional-font {
     /* font-family: 'Courier New', Courier, monospace; */
-    font-family: 'Josefin Sans', monospace;
+    font-family: "Josefin Sans", monospace;
     /* font-family: "Raleway", sans-serif; */
     font-weight: 700;
     /* Bold weight */
     font-size: 2.5em;
-    color: #FFFFFF;
+    color: #ffffff;
     /* White text */
 }
 
 header p {
     font-size: 1.5em;
-    color: #E0E0E0;
+    color: #e0e0e0;
     /* Light grey text */
     display: inline-block;
     /* Allow the <p> to occupy only the width of its content */
@@ -56,7 +56,7 @@ header p {
 
 /* Light Theme for Header */
 body.light-mode header {
-    background-color: #F5F5F5; /* Light grey background */
+    background-color: #f5f5f5; /* Light grey background */
     border-bottom: 1px solid #000000; /* Black border */
 }
 
@@ -69,7 +69,7 @@ body.light-mode header p {
 }
 
 nav {
-    background-color: #1C1C1C;
+    background-color: #1c1c1c;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -93,7 +93,6 @@ nav ul {
         justify-content: center;
         /* Center the items */
     }
-    
 }
 
 nav ul li {
@@ -101,12 +100,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #E0E0E0;
+    color: #e0e0e0;
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .container {
@@ -118,10 +117,9 @@ nav ul li a:hover {
     margin-left: auto; /* Push the toggle button to the far right */
 }
 
-
 /* Light Theme for Navbar */
 body.light-mode nav {
-    background-color: #F5F5F5; /* Light grey background */
+    background-color: #f5f5f5; /* Light grey background */
 }
 
 body.light-mode nav ul li a {
@@ -131,7 +129,6 @@ body.light-mode nav ul li a {
 body.light-mode nav ul li a:hover {
     color: #000000; /* Black text on hover */
 }
-
 
 /* theme toggle animation */
 .toggle-label {
@@ -146,20 +143,23 @@ body.light-mode nav ul li a:hover {
     display: none;
 }
 
-.material-icons.sun, .material-icons.moon {
+.material-icons.sun,
+.material-icons.moon {
     font-size: 32px;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition:
+        transform 0.5s ease-in-out,
+        opacity 0.5s ease-in-out;
     position: absolute;
 }
 
 .material-icons.sun {
-    color: #FFD700; /* Gold color for the sun */
+    color: #ffd700; /* Gold color for the sun */
     opacity: 0;
     transform: rotate(-180deg);
 }
 
 .material-icons.moon {
-    color: #B0C4DE; /* LightSteelBlue color for the moon */
+    color: #b0c4de; /* LightSteelBlue color for the moon */
     opacity: 1;
     transform: rotate(0deg);
 }
@@ -174,21 +174,18 @@ body.light-mode nav ul li a:hover {
     transform: rotate(180deg);
 }
 
-
-
 @media (max-width: 600px) {
-    .material-icons.sun, .material-icons.moon {
+    .material-icons.sun,
+    .material-icons.moon {
         font-size: 24px; /* Smaller font size for mobile */
     }
-    
+
     .toggle-label {
         padding: 0;
         width: 48px; /* Adjust width of the toggle container */
         height: 48px; /* Adjust height of the toggle container */
     }
 }
-
-
 
 .sticky {
     position: fixed;
@@ -205,12 +202,12 @@ main {
 }
 
 .block {
-    background-color: #1C1C1C;
+    background-color: #1c1c1c;
     /* Dark grey background */
     padding: 20px;
     margin: 20px 0;
     width: 80%;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #e0e0e0;
     /* Light grey border */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -218,7 +215,7 @@ main {
 
 /* Light Theme for Block */
 body.light-mode .block {
-    background-color: #F5F5F5; /* Light grey background */
+    background-color: #f5f5f5; /* Light grey background */
     border: 1px solid #333333; /* Dark grey border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
 }
@@ -231,7 +228,7 @@ body.light-mode .block {
 #about h2,
 #about h3 {
     margin-bottom: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
 }
 
 .education {
@@ -253,7 +250,7 @@ body.light-mode .block {
 
 .degree .details p {
     margin: 5px;
-    color: #E0E0E0;
+    color: #e0e0e0;
 }
 
 .degree .details p:first-child {
@@ -262,7 +259,7 @@ body.light-mode .block {
 
 body.light-mode #about h2,
 body.light-mode #about h3 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
 }
 
 body.light-mode .degree .details p {
@@ -270,12 +267,12 @@ body.light-mode .degree .details p {
 }
 
 .project {
-    background-color: #2A2A2A;
+    background-color: #2a2a2a;
     /* Darker grey for projects */
     padding: 15px;
     margin: 15px 0;
     border-radius: 8px;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #e0e0e0;
     /* Light grey border */
 }
 
@@ -309,7 +306,7 @@ body.light-mode .degree .details p {
 
 .project-text h3 {
     /* font-family: 'Courier New', Courier, monospace; */
-    color: #FFFFFF;
+    color: #ffffff;
     /* Text color */
     font-size: 1.5em;
     /* Header font size */
@@ -318,7 +315,7 @@ body.light-mode .degree .details p {
 }
 
 .project-text p {
-    color: #E0E0E0;
+    color: #e0e0e0;
     /* Text color */
     font-size: 1em;
     /* Text font size */
@@ -327,7 +324,7 @@ body.light-mode .degree .details p {
 }
 
 .project-text h3.special-font {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     /* font-family: 'Josefin Sans', monospace; */
     font-size: 1.5em;
     /* Header font size */
@@ -351,7 +348,7 @@ body.light-mode .degree .details p {
     display: inline-block;
     background-color: #333;
     /* Dark background */
-    color: #FFFFFF;
+    color: #ffffff;
     /* White text */
     text-align: center;
     padding: 10px 30px;
@@ -379,7 +376,6 @@ body.light-mode .degree .details p {
     /* Align icon vertically */
 }
 
-
 .github-link {
     display: block;
     /* Ensure entire logo is clickable */
@@ -396,7 +392,7 @@ body.light-mode .degree .details p {
 
 /* Light Theme for Project Section */
 body.light-mode .project {
-    background-color: #F5F5F5; /* Light grey background */
+    background-color: #f5f5f5; /* Light grey background */
     border: 1px solid #333333; /* Dark grey border */
 }
 
@@ -409,13 +405,13 @@ body.light-mode .project-text p {
 }
 
 body.light-mode .project-button {
-    background-color: #DDDDDD; /* Light background */
+    background-color: #dddddd; /* Light background */
     color: #000000; /* Black text */
     border: 1px solid #999999; /* Grey border */
 }
 
 body.light-mode .project-button:hover {
-    background-color: #BBBBBB; /* Darker background on hover */
+    background-color: #bbbbbb; /* Darker background on hover */
 }
 
 /* Media query for mobile screens */
@@ -452,23 +448,23 @@ body.light-mode .project-button:hover {
 /* General styles */
 
 #lichess-playing-card {
-    background-color: #1C1C1C;
+    background-color: #1c1c1c;
     /* Dark grey background */
     padding: 20px;
     margin: 20px 0;
     width: 80%;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #e0e0e0;
     /* Light grey border */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #FFFFFF;
+    color: #ffffff;
     position: relative;
     /* Ensure the block is the reference point for positioning */
 }
 
 #lichess-playing-card h2 {
     margin-bottom: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
 }
 
 .lichess-content {
@@ -494,20 +490,20 @@ body.light-mode .project-button:hover {
     width: 300px;
     /* Adjust size as needed */
     height: 300px;
-    background-color: #F0D9B5;
+    background-color: #f0d9b5;
     /* Light brown background to simulate a chess board */
     border: 2px solid #333;
     /* Dark border */
 }
 
 #chess-game-details {
-    color: #E0E0E0;
+    color: #e0e0e0;
     text-align: center;
     margin-bottom: 10px;
 }
 
 #chess-game-details p {
-    color: #E0E0E0;
+    color: #e0e0e0;
     margin: 5px 0;
 }
 
@@ -552,7 +548,7 @@ button:hover {
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #FFFFFF;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -595,7 +591,7 @@ button:hover {
     display: inline-block;
     padding: 5px 10px;
     background-color: #595757;
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s ease;
@@ -614,7 +610,7 @@ button:hover {
 }
 
 .lichess-rating i {
-    color: #FFD700;
+    color: #ffd700;
     /* Gold color for icons */
     flex-wrap: wrap;
 }
@@ -635,10 +631,9 @@ button:hover {
     /* padding-left: 10%; */
 }
 
-
 /* Light Theme for Lichess Playing Card */
 body.light-mode #lichess-playing-card {
-    background-color: #F5F5F5; /* Light grey background */
+    background-color: #f5f5f5; /* Light grey background */
     border: 1px solid #333333; /* Dark grey border */
     color: #000000; /* Black text */
 }
@@ -652,27 +647,27 @@ body.light-mode #chess-game-details p {
 }
 
 body.light-mode button {
-    background-color: #DDDDDD; /* Light background */
+    background-color: #dddddd; /* Light background */
     color: #000000; /* Black text */
     border: 1px solid #999999; /* Grey border */
 }
 
 body.light-mode button:hover {
-    background-color: #BBBBBB; /* Darker background on hover */
+    background-color: #bbbbbb; /* Darker background on hover */
 }
 
 body.light-mode #lichess-info-box {
-    background-color: #DDDDDD; /* Light background */
+    background-color: #dddddd; /* Light background */
     color: #000000; /* Black text */
 }
 
 body.light-mode #lichess-username {
-    background-color: #DDDDDD; /* Light background */
+    background-color: #dddddd; /* Light background */
     color: #000000; /* Black text */
 }
 
 body.light-mode #challenge-me {
-    background-color: #BBBBBB; /* Light grey background */
+    background-color: #bbbbbb; /* Light grey background */
     color: #000000; /* Black text */
 }
 
@@ -687,16 +682,16 @@ body.light-mode .lichess-rating i {
 /* Media query for mobile screens */
 @media screen and (max-width: 768px) {
     #lichess-playing-card {
-        background-color: #1C1C1C;
+        background-color: #1c1c1c;
         /* Dark grey background */
         /* padding: 20px; */
         /* margin: 20px 0; */
         width: 95%;
-        border: 1px solid #E0E0E0;
+        border: 1px solid #e0e0e0;
         /* Light grey border */
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        color: #FFFFFF;
+        color: #ffffff;
         position: relative;
         /* Ensure the block is the reference point for positioning */
     }
@@ -759,7 +754,6 @@ body.light-mode .lichess-rating i {
         /* padding-right: 500px; */
     }
 
-
     .lichess-rating {
         min-width: 100px;
         /* Each rating takes almost half the width */
@@ -785,15 +779,9 @@ body.light-mode .lichess-rating i {
         /* gap: 40px; */
         justify-content: center;
     }
-
-
 }
 
-
-
-
 /* publications */
-
 
 /* Default styles for desktop */
 .publication-details {
@@ -828,7 +816,7 @@ body.light-mode .lichess-rating i {
 }
 
 .publication-text p {
-    color: #E0E0E0;
+    color: #e0e0e0;
     /* Text color */
     font-size: 1em;
     /* Text font size */
@@ -853,7 +841,7 @@ body.light-mode .lichess-rating i {
 .publication-button {
     display: inline-block;
     background-color: #333;
-    color: #FFF;
+    color: #fff;
     text-align: center;
     padding: 10px 20px;
     margin-right: 10px;
@@ -907,8 +895,6 @@ body.light-mode .publication-text p {
     }
 }
 
-
-
 /* Styles for Contact page */
 
 .contact-section {
@@ -929,7 +915,7 @@ body.light-mode .publication-text p {
     width: 100%;
     height: 450px;
     /* Adjust map height */
-    border: 1px solid #E0E0E0;
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
 }
 
@@ -939,7 +925,7 @@ body.light-mode .publication-text p {
 }
 
 .contact-details h2 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     margin-bottom: 20px;
     margin-left: 30px;
 }
@@ -952,7 +938,7 @@ body.light-mode .publication-text p {
 }
 
 .social-media-links {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     list-style: none;
     padding: 0;
     display: flex;
@@ -1016,13 +1002,11 @@ body.light-mode .publication-text p {
     }
 }
 
-
-
 footer {
-    background-color: #1C1C1C; /* Dark grey background */
+    background-color: #1c1c1c; /* Dark grey background */
     padding: 10px 20px;
     text-align: center;
-    border-top: 1px solid #E0E0E0; /* Light grey border */
+    border-top: 1px solid #e0e0e0; /* Light grey border */
 }
 
 footer ul {
@@ -1038,12 +1022,12 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #E0E0E0; /* Light grey links */
+    color: #e0e0e0; /* Light grey links */
     text-decoration: none;
 }
 
 footer ul li a:hover {
-    color: #FFFFFF; /* White on hover */
+    color: #ffffff; /* White on hover */
 }
 
 /* Media query for mobile devices */
@@ -1060,15 +1044,13 @@ footer ul li a:hover {
     }
 }
 
-
-
 /* Light mode styles */
 body.light-mode footer {
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     /* Light grey background */
     padding: 10px 20px;
     text-align: center;
-    border-top: 1px solid #CCCCCC;
+    border-top: 1px solid #cccccc;
     /* Light grey border */
 }
 
@@ -1084,7 +1066,7 @@ body.light-mode footer ul li a:hover {
 
 /* Gradient text color for changing text */
 #typed-text {
-    background: linear-gradient(45deg, #2196F3, #9C27B0, #F44336);
+    background: linear-gradient(45deg, #2196f3, #9c27b0, #f44336);
     /* Blue to purple to red */
     -webkit-background-clip: text;
     /* Apply gradient as text color */
@@ -1116,5 +1098,410 @@ body.light-mode footer ul li a:hover {
     .block {
         width: 95%;
         margin: 10px 0;
+    }
+}
+
+/* Blog Styling */
+.blog-container {
+    max-width: 740px;
+    margin: 20px auto 40px;
+    padding: 20px;
+    line-height: 1.6;
+    font-family: 'Georgia', serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.blog-post {
+    margin-bottom: 40px;
+}
+
+.blog-title {
+    font-size: 2.4em;
+    margin-bottom: 15px;
+    font-family: 'Lora', serif;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.blog-meta {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 25px;
+    font-family: 'Georgia', serif;
+    font-size: 0.95em;
+}
+
+.blog-content {
+    font-size: 1.1em;
+    font-family: 'Georgia', serif;
+}
+
+.blog-content p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #e0e0e0;
+    font-size: 1.05em;
+}
+
+.blog-content h2 {
+    font-size: 1.8em;
+    margin: 35px 0 18px 0;
+    color: #ffffff;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+.blog-content h3 {
+    font-size: 1.5em;
+    margin: 30px 0 15px 0;
+    color: #ffffff;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+
+.blog-content h4 {
+    font-size: 1.25em;
+    margin: 22px 0 12px 0;
+    color: #ffffff;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+}
+
+.blog-content h5 {
+    font-size: 1.1em;
+    margin: 18px 0 10px 0;
+    color: #ffffff;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+}
+
+.blog-callout {
+    background-color: rgba(70, 70, 70, 0.3);
+    border-left: 3px solid #4CAF50;
+    padding: 12px 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+
+.blue-callout {
+    background-color: rgba(65, 105, 225, 0.2);
+    border-left: 3px solid royalblue;
+}
+
+.blue-callout h4 {
+    margin-top: 0;
+    color: royalblue;
+}
+
+.blog-divider {
+    border: 0;
+    height: 1px;
+    background: #555;
+    margin: 40px 0;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.blog-intro-quote {
+    font-style: italic;
+    font-size: 1.15em;
+    color: #aaaaaa;
+    border-left: 3px solid #555;
+    padding-left: 20px;
+    margin: 25px 0 30px;
+    line-height: 1.6;
+    position: relative;
+}
+
+.quote-attribution {
+    display: block;
+    font-style: normal;
+    font-size: 0.8em;
+    color: #888888;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.blog-list {
+    margin: 20px 0 25px 30px;
+    padding: 0;
+    list-style-type: disc;
+    box-sizing: border-box;
+    width: calc(100% - 30px);
+}
+
+.blog-list li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    line-height: 1.5;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.blog-author-note {
+    background-color: rgba(50, 50, 50, 0.3);
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-top: 40px;
+    font-size: 0.95em;
+}
+
+.blog-author-note p {
+    margin-bottom: 0;
+    color: #cccccc;
+}
+
+/* Light mode blog styles */
+body.light-mode .blog-title {
+    color: #000000;
+}
+
+body.light-mode .blog-meta {
+    color: #555;
+}
+
+body.light-mode .blog-content h2,
+body.light-mode .blog-content h3,
+body.light-mode .blog-content h4,
+body.light-mode .blog-content h5 {
+    color: #222222;
+}
+
+body.light-mode .blog-callout {
+    background-color: rgba(240, 240, 240, 0.7);
+    border-left-color: #4CAF50;
+    color: #333333;
+}
+
+body.light-mode .blue-callout {
+    background-color: rgba(65, 105, 225, 0.1);
+    border-left-color: royalblue;
+}
+
+body.light-mode .blue-callout h4 {
+    color: royalblue;
+}
+
+/* Table styles */
+.blog-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #444;
+    margin: 20px 0;
+    font-size: 0.95em;
+}
+
+.blog-table th {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #444;
+    background-color: rgba(70, 70, 70, 0.5);
+    font-weight: bold;
+}
+
+.blog-table th:first-child {
+    text-align: left;
+}
+
+.blog-table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #444;
+}
+
+.blog-table td:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.table-caption {
+    font-size: 0.9em;
+    color: #999;
+    text-align: right;
+    margin-top: 5px;
+}
+
+body.light-mode .blog-table {
+    border-color: #ddd;
+}
+
+body.light-mode .blog-table th {
+    background-color: rgba(240, 240, 240, 0.8);
+    border-color: #ddd;
+    color: #333;
+}
+
+body.light-mode .blog-table td {
+    border-color: #ddd;
+    color: #333;
+}
+
+@media screen and (max-width: 600px) {
+    .blog-table {
+        font-size: 0.85em;
+        width: 100%;
+    }
+    
+    .blog-table th,
+    .blog-table td {
+        padding: 6px 4px;
+    }
+    
+    .table-caption {
+        font-size: 0.8em;
+        width: 100%;
+    }
+    
+    main {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
+    .blog-callout {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 15px 0;
+    }
+    
+    .blog-container {
+        padding: 10px;
+        margin: 5px auto;
+    }
+    
+    .blog-content p,
+    .blog-list,
+    .blog-list li {
+        font-size: 0.95em;
+    }
+}
+
+body.light-mode .blog-content p {
+    color: #333333;
+}
+
+body.light-mode .blog-divider {
+    background: #ccc;
+}
+
+body.light-mode .blog-intro-quote {
+    color: #666666;
+    border-left-color: #cccccc;
+}
+
+body.light-mode .quote-attribution {
+    color: #777777;
+}
+
+body.light-mode .blog-list li {
+    color: #333333;
+}
+
+body.light-mode .blog-author-note {
+    background-color: rgba(240, 240, 240, 0.7);
+}
+
+body.light-mode .blog-author-note p {
+    color: #444444;
+}
+
+/* Responsive blog styles */
+@media screen and (max-width: 768px) {
+    .blog-container {
+        padding: 15px;
+        width: 100%;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+    
+    .blog-title {
+        font-size: 1.8em;
+        line-height: 1.3;
+    }
+    
+    .blog-content {
+        font-size: 1.05em;
+        width: 100%;
+    }
+    
+    .blog-content p {
+        margin-bottom: 18px;
+        line-height: 1.6;
+        font-size: 1em;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .blog-intro-quote {
+        font-size: 1.05em;
+        padding-left: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .quote-attribution {
+        font-size: 0.75em;
+        width: 100%;
+    }
+    
+    .blog-author-note {
+        padding: 12px 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .blog-content h2 {
+        font-size: 1.6em;
+        margin: 30px 0 15px 0;
+        width: 100%;
+    }
+    
+    .blog-content h3 {
+        font-size: 1.35em;
+        margin: 25px 0 12px 0;
+        width: 100%;
+    }
+    
+    .blog-content h4 {
+        font-size: 1.15em;
+        margin: 20px 0 10px 0;
+        width: 100%;
+    }
+    
+    .blog-content h5 {
+        font-size: 1em;
+        margin: 18px 0 8px 0;
+        width: 100%;
+    }
+    
+    .blog-list {
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 15px;
+    }
+    
+    .blog-callout {
+        padding: 10px 12px;
+        font-size: 0.9em;
+        margin: 12px 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 }

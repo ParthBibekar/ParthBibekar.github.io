@@ -1,6 +1,13 @@
-var board = Chessboard2('myBoard', 'start');
+/**
+ * Chess Board and Game Replay Functionality
+ * This script initializes and manages a chess board that demonstrates a predefined game.
+ */
 
-var moves = [
+// Initialize the chessboard
+const board = Chessboard2('myBoard', 'start');
+
+// Define the moves of the chess game to be displayed
+const moves = [
     'd2-d4', 'd7-d5',
     'g1-f3', 'g8-f6',
     'e2-e3', 'e7-e6',
@@ -25,16 +32,25 @@ var moves = [
     'g1-h1', 'h2-e5'
 ];
 
-var currentIndex = 0;
-var gamePosition = [];
+// Game state tracking
+let currentIndex = 0;
+const gamePosition = [];
 
+/**
+ * Sets the board to a specific position in the game
+ * @param {number} index - The position index to display
+ */
 const setPosition = (index) => {
     if (index >= 0 && index < gamePosition.length) {
         board.position(gamePosition[index]);
         currentIndex = index;
     }
-}
+};
 
+/**
+ * Updates the board with a new move and stores the resulting position
+ * @param {string|array} move - The move to apply (can be a single move or an array for castling)
+ */
 const updatePosition = (move) => {
     if (Array.isArray(move)) {
         move.forEach(m => board.move(m));
@@ -42,28 +58,34 @@ const updatePosition = (move) => {
         board.move(move);
     }
     gamePosition.push(board.fen());
-}
+};
 
-$('#nextBtn').on('click', function () {
-    if (currentIndex < moves.length) {
-        const move = moves[currentIndex];
-        if (move) {
-            updatePosition(move);
-        }
-        currentIndex++;
-    }
-});
-
-$('#prevBtn').on('click', function () {
-    setPosition(currentIndex - 2); // step back twice
-});
-
-$('#startPositionBtn').on('click', function () {
-    board.start();
-    gamePosition = [];
-    currentIndex = 0;
-});
-
+// Set up event listeners for the control buttons
 $(document).ready(function() {
-    gamePosition.push(board.fen()); // store the start position
+    // Store the initial position
+    gamePosition.push(board.fen());
+    
+    // Next move button
+    $('#nextBtn').on('click', function() {
+        if (currentIndex < moves.length) {
+            const move = moves[currentIndex];
+            if (move) {
+                updatePosition(move);
+            }
+            currentIndex++;
+        }
+    });
+    
+    // Previous move button
+    $('#prevBtn').on('click', function() {
+        setPosition(currentIndex - 2); // Step back twice
+    });
+    
+    // Reset button
+    $('#startPositionBtn').on('click', function() {
+        board.start();
+        gamePosition.length = 0; // Clear the array
+        gamePosition.push(board.fen()); // Add the starting position
+        currentIndex = 0;
+    });
 });

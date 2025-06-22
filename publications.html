@@ -1,8 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <!-- Google tag (gtag.js)
+    <head>
+        <!-- Google tag (gtag.js)
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3VF1L08YVL"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -11,137 +10,306 @@
 
         gtag('config', 'G-3VF1L08YVL');
     </script> -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Publications</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-</head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Publications</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="script.js"></script>
+    </head>
 
+    <body>
+        <header>
+            <h1 class="professional-font">Publications</h1>
+        </header>
 
-
-<body>
-    <header>
-        <h1 class="professional-font">Publications</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <!-- <li><a href="about.html">About Me</a></li> -->
-            <!-- <li><a href="projects.html">Projects</a></li> -->
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="assets/CV.pdf" target="_blank">CV</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="container">
-            <label class="toggle-label" for="checkbox">
-                <input type="checkbox" id="checkbox">
-                <i class="material-icons sun">wb_sunny</i>
-                <i class="material-icons moon">nightlight_round</i>
-            </label>
-        </div>
-    </nav>
-
-    <main>
-        <div>
-            <a href="https://scholar.google.com/citations?user=Sx6KhU4AAAAJ&hl=en" target="_blank" class="custom-link">
-                <img src="assets/Google_Scholar_logo.svg" alt="Google Scholar" style="width:20px; height:20px; vertical-align:middle; margin-right:8px;">Parth Bibekar
-            </a>
-        </div>
-
-        <!-- PeSTo-Carbs Publication -->
-        <section id="pesto-carbs-publication" class="block">
-            <h3>PeSTo-Carbs: Geometric Deep Learning for Prediction of Protein−Carbohydrate Binding Interfaces</h3>
-            <p class="publication-authors"><u>Parth Bibekar</u>, Lucien Krapp, Matteo Dal Peraro; Journal of Chemical
-                Theory and Computation, 2024</p>
-            <div class="publication-details">
-                <div class="publication-image">
-                    <img src="assets/pesto-carbs-jctc-cover.jpg" alt="PeSTo-Carbs Journal Cover" class="rounded-image">
-                    <p class="image-caption">PeSTo-Carbs as the Journal Cover. Graphic designed by <a
-                            href="https://theveryspecial.com/" target="_blank" class="custom-link">Andrea Vucicevic</a>.
-                    </p>
-                </div>
-                <div class="publication-text">
-                    <p><b>Abstract:</b> The Protein Structure Transformer (PeSTo), a geometric transformer, has
-                        exhibited exceptional performance in predicting protein–protein binding interfaces and
-                        distinguishing interfaces with nucleic acids, lipids, small molecules, and ions. In this study,
-                        we introduce PeSTo-Carbs, an extension of PeSTo specifically engineered to predict
-                        protein–carbohydrate binding interfaces. We evaluate the performance of this approach using
-                        independent test sets and compare them with those of previous methods. Furthermore, we highlight
-                        the model’s capability to specialize in predicting interfaces involving cyclodextrins, a
-                        biologically and pharmaceutically significant class of carbohydrates. Our method consistently
-                        achieves remarkable accuracy despite the scarcity of available structural data for
-                        cyclodextrins.</p>
-                    <div class="project-buttons">
-                        <a href="https://github.com/LBM-EPFL/PeSTo-Carbs" target="_blank" class="project-button">
-                            <img src="assets/github-icon-38976.png" alt="GitHub" class="button-icon">
-                            <span>Code</span>
-                        </a>
-                        <a href="https://doi.org/10.1021/acs.jctc.3c01145" target="_blank" class="project-button">
-                            <span>Paper</span>
-                        </a>
-                        <a href="https://pubs.acs.org/toc/jctcce/20/8" target="_blank" class="project-button">
-                            <span>Journal Cover</span>
-                        </a>
-                        <a href="https://pesto.epfl.ch/" target="_blank" class="project-button">
-                            <span>Web-server</span>
-                        </a>
-                    </div>
-                </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="about.html">About Me</a></li> -->
+                <!-- <li><a href="projects.html">Projects</a></li> -->
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="assets/CV.pdf" target="_blank">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="container">
+                <label class="toggle-label" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <i class="material-icons sun">wb_sunny</i>
+                    <i class="material-icons moon">nightlight_round</i>
+                </label>
             </div>
-        </section>
+        </nav>
 
-        <!-- RISoTTo Publication -->
-        <section id="pesto-carbs-publication" class="block">
-            <h3>Conformational ensemble of the NSP1 CTD in SARS-CoV-2: Perspectives from the free energy landscape</h3>
-            <p class="publication-authors">Pallab Dutta, Abhay Kshirsagar, <u>Parth Bibekar</u>, Neelanjana Sengupta;
-                Biophysical Journal, 2023</p>
-            <div class="publication-details">
-                <!-- <div class="publication-image">
+        <main>
+            <div>
+                <a
+                    href="https://scholar.google.com/citations?user=Sx6KhU4AAAAJ&hl=en"
+                    target="_blank"
+                    class="custom-link"
+                >
+                    <img
+                        src="assets/Google_Scholar_logo.svg"
+                        alt="Google Scholar"
+                        style="
+                            width: 20px;
+                            height: 20px;
+                            vertical-align: middle;
+                            margin-right: 8px;
+                        "
+                    />Parth Bibekar
+                </a>
+            </div>
+
+            <!-- RISoTTo Publication -->
+            <section id="pesto-carbs-publication" class="block">
+                <h3>
+                    Context-aware geometric deep learning for RNA sequence
+                    design
+                </h3>
+                <p class="publication-authors">
+                    <u>Parth Bibekar</u>, Lucien Krapp, Matteo Dal Peraro;
+                    bioRxiv, 2025
+                </p>
+                <div class="publication-details">
+                    <!-- <div class="publication-image">
                     <img src="assets/pesto-carbs-jctc-cover.jpg" alt="PeSTo-Carbs Journal Cover" class="rounded-image">
                     <p class="image-caption">PeSTo-Carbs as the Journal Cover. Graphic designed by Andrea Vucicevic.</p>
                 </div> -->
-                <div class="publication-text">
-                    <p><b>Significance:</b> SARS-CoV-2, the causative agent in the COVID-19 pandemic, encodes 16 mature
-                        nonstructural proteins (NSPs) besides the structural proteins that attribute shape to the viral
-                        particles. Although an intrinsically disordered region, the NSP1 C-terminal domain (CTD) is
-                        reported to block the host mRNA entry channel in the 40S ribosomal subunit by forming a
-                        two-helix conformation. Here, we investigate the conformational ensemble of NSP1 CTD to reveal
-                        the thermokinetics in its order-disorder transitions. Our analyses determine the existence of
-                        two distinct unfolded populations separated by high kinetic barriers from the predominant one
-                        that is compatible with complex formation with the ribosome. Structural insights from this study
-                        may help identify suitable drugs to impair the ribosomal blocking mechanism.</p>
-                    <div class="project-buttons">
-                        <a href="https://github.com/Pallab-Dutta/EMMD" target="_blank" class="project-button">
-                            <img src="assets/github-icon-38976.png" alt="GitHub" class="button-icon">
-                            <span>Code</span>
-                        </a>
-                        <a href="https://doi.org/10.1016/j.bpj.2023.02.010" target="_blank" class="project-button">
-                            <span>Paper</span>
-                        </a>
+                    <div class="publication-text">
+                        <p>
+                            <b>Abstract:</b> RNA design has emerged to play a
+                            crucial role in synthetic biology and therapeutics.
+                            Although tertiary structure-based RNA design methods
+                            have been developed recently, they still overlook
+                            the broader molecular context, such as interactions
+                            with proteins, ligands, DNA, or ions, limiting the
+                            accuracy and functionality of designed sequences. To
+                            address this challenge, we present RISoTTo
+                            (RIbonucleic acid Sequence design from TerTiary
+                            structure), a parameter-free geometric deep learning
+                            approach that generates RNA sequences conditioned on
+                            both their backbone scaffolds and the surrounding
+                            molecular context. We evaluate the designed
+                            sequences based on their native sequence recovery
+                            rate and further validate them by predicting their
+                            secondary structures in silico and comparing them to
+                            the corresponding native structures. RISoTTo
+                            performs well on both metrics, demonstrating its
+                            ability to generate accurate and structurally
+                            consistent RNA sequences. Additionally, we present
+                            an in silico design study of domain 1 of the NAD+
+                            riboswitch, where RISoTTo generated sequences are
+                            predicted to exhibit enhanced binding affinity for
+                            both the U1A protein and the NAD+ ligand.
+                        </p>
+                        <div class="project-buttons">
+                            <a
+                                href="https://www.biorxiv.org/content/10.1101/2025.06.21.660801v1"
+                                target="_blank"
+                                class="project-button"
+                            >
+                                <span>Paper</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
+            <!-- PeSTo-Carbs Publication -->
+            <section id="pesto-carbs-publication" class="block">
+                <h3>
+                    PeSTo-Carbs: Geometric Deep Learning for Prediction of
+                    Protein−Carbohydrate Binding Interfaces
+                </h3>
+                <p class="publication-authors">
+                    <u>Parth Bibekar</u>, Lucien Krapp, Matteo Dal Peraro;
+                    Journal of Chemical Theory and Computation, 2024
+                </p>
+                <div class="publication-details">
+                    <div class="publication-image">
+                        <img
+                            src="assets/pesto-carbs-jctc-cover.jpg"
+                            alt="PeSTo-Carbs Journal Cover"
+                            class="rounded-image"
+                        />
+                        <p class="image-caption">
+                            PeSTo-Carbs as the Journal Cover. Graphic designed
+                            by
+                            <a
+                                href="https://theveryspecial.com/"
+                                target="_blank"
+                                class="custom-link"
+                                >Andrea Vucicevic</a
+                            >.
+                        </p>
+                    </div>
+                    <div class="publication-text">
+                        <p>
+                            <b>Abstract:</b> The Protein Structure Transformer
+                            (PeSTo), a geometric transformer, has exhibited
+                            exceptional performance in predicting
+                            protein–protein binding interfaces and
+                            distinguishing interfaces with nucleic acids,
+                            lipids, small molecules, and ions. In this study, we
+                            introduce PeSTo-Carbs, an extension of PeSTo
+                            specifically engineered to predict
+                            protein–carbohydrate binding interfaces. We evaluate
+                            the performance of this approach using independent
+                            test sets and compare them with those of previous
+                            methods. Furthermore, we highlight the model’s
+                            capability to specialize in predicting interfaces
+                            involving cyclodextrins, a biologically and
+                            pharmaceutically significant class of carbohydrates.
+                            Our method consistently achieves remarkable accuracy
+                            despite the scarcity of available structural data
+                            for cyclodextrins.
+                        </p>
+                        <div class="project-buttons">
+                            <a
+                                href="https://github.com/LBM-EPFL/PeSTo-Carbs"
+                                target="_blank"
+                                class="project-button"
+                            >
+                                <img
+                                    src="assets/github-icon-38976.png"
+                                    alt="GitHub"
+                                    class="button-icon"
+                                />
+                                <span>Code</span>
+                            </a>
+                            <a
+                                href="https://doi.org/10.1021/acs.jctc.3c01145"
+                                target="_blank"
+                                class="project-button"
+                            >
+                                <span>Paper</span>
+                            </a>
+                            <a
+                                href="https://pubs.acs.org/toc/jctcce/20/8"
+                                target="_blank"
+                                class="project-button"
+                            >
+                                <span>Journal Cover</span>
+                            </a>
+                            <a
+                                href="https://pesto.epfl.ch/"
+                                target="_blank"
+                                class="project-button"
+                            >
+                                <span>Web-server</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    </main>
+            <!-- RISoTTo Publication -->
+            <section id="pesto-carbs-publication" class="block">
+                <h3>
+                    Conformational ensemble of the NSP1 CTD in SARS-CoV-2:
+                    Perspectives from the free energy landscape
+                </h3>
+                <p class="publication-authors">
+                    Pallab Dutta, Abhay Kshirsagar, <u>Parth Bibekar</u>,
+                    Neelanjana Sengupta; Biophysical Journal, 2023
+                </p>
+                <div class="publication-details">
+                    <!-- <div class="publication-image">
+                    <img src="assets/pesto-carbs-jctc-cover.jpg" alt="PeSTo-Carbs Journal Cover" class="rounded-image">
+                    <p class="image-caption">PeSTo-Carbs as the Journal Cover. Graphic designed by Andrea Vucicevic.</p>
+                </div> -->
+                    <div class="publication-text">
+                        <p>
+                            <b>Significance:</b> SARS-CoV-2, the causative agent
+                            in the COVID-19 pandemic, encodes 16 mature
+                            nonstructural proteins (NSPs) besides the structural
+                            proteins that attribute shape to the viral
+                            particles. Although an intrinsically disordered
+                            region, the NSP1 C-terminal domain (CTD) is reported
+                            to block the host mRNA entry channel in the 40S
+                            ribosomal subunit by forming a two-helix
+                            conformation. Here, we investigate the
+                            conformational ensemble of NSP1 CTD to reveal the
+                            thermokinetics in its order-disorder transitions.
+                            Our analyses determine the existence of two distinct
+                            unfolded populations separated by high kinetic
+                            barriers from the predominant one that is compatible
+                            with complex formation with the ribosome. Structural
+                            insights from this study may help identify suitable
+                            drugs to impair the ribosomal blocking mechanism.
+                        </p>
+                        <div class="project-buttons">
+                            <a
+                                href="https://github.com/Pallab-Dutta/EMMD"
+                                target="_blank"
+                                class="project-button"
+                            >
+                                <img
+                                    src="assets/github-icon-38976.png"
+                                    alt="GitHub"
+                                    class="button-icon"
+                                />
+                                <span>Code</span>
+                            </a>
+                            <a
+                                href="https://doi.org/10.1016/j.bpj.2023.02.010"
+                                target="_blank"
+                                class="project-button"
+                            >
+                                <span>Paper</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    <footer>
-        <p>Connect with me:</p>
-        <ul>
-            <li><a href="https://github.com/ParthBibekar" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/parth-bibekar-a8a2a0247/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://x.com/BibekarParth" target="_blank">Twitter</a></li>
-            <li><a href="https://bsky.app/profile/parthbibekar.bsky.social" target="_blank">Bluesky</a></li>
-            <li><a href="https://lichess.org/@/Parth_b" target="_blank">Lichess</a></li>
-            <!-- Add other social media links -->
-        </ul>
-        <p style="font-size: small; color: #a9a9a9;">Made with ❤️ by Parth Bibekar</p>
-    </footer>
-</body>
-
+        <footer>
+            <p>Connect with me:</p>
+            <ul>
+                <li>
+                    <a href="https://github.com/ParthBibekar" target="_blank"
+                        >GitHub</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/parth-bibekar-a8a2a0247/"
+                        target="_blank"
+                        >LinkedIn</a
+                    >
+                </li>
+                <li>
+                    <a href="https://x.com/BibekarParth" target="_blank"
+                        >Twitter</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://bsky.app/profile/parthbibekar.bsky.social"
+                        target="_blank"
+                        >Bluesky</a
+                    >
+                </li>
+                <li>
+                    <a href="https://lichess.org/@/Parth_b" target="_blank"
+                        >Lichess</a
+                    >
+                </li>
+                <!-- Add other social media links -->
+            </ul>
+            <p style="font-size: small; color: #a9a9a9">
+                Made with ❤️ by Parth Bibekar
+            </p>
+        </footer>
+    </body>
 </html>

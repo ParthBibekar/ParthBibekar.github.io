@@ -1107,7 +1107,7 @@ body.light-mode footer ul li a:hover {
     margin: 20px auto 40px;
     padding: 20px;
     line-height: 1.6;
-    font-family: 'Georgia', serif;
+    font-family: "Georgia", serif;
     width: 100%;
     box-sizing: border-box;
 }
@@ -1119,7 +1119,7 @@ body.light-mode footer ul li a:hover {
 .blog-title {
     font-size: 2.4em;
     margin-bottom: 15px;
-    font-family: 'Lora', serif;
+    font-family: "Lora", serif;
     color: #ffffff;
     letter-spacing: -0.5px;
     line-height: 1.2;
@@ -1130,13 +1130,13 @@ body.light-mode footer ul li a:hover {
     font-style: italic;
     color: #777;
     margin-bottom: 25px;
-    font-family: 'Georgia', serif;
+    font-family: "Georgia", serif;
     font-size: 0.95em;
 }
 
 .blog-content {
     font-size: 1.1em;
-    font-family: 'Georgia', serif;
+    font-family: "Georgia", serif;
 }
 
 .blog-content p {
@@ -1151,7 +1151,7 @@ body.light-mode footer ul li a:hover {
     font-size: 1.8em;
     margin: 35px 0 18px 0;
     color: #ffffff;
-    font-family: 'Lora', serif;
+    font-family: "Lora", serif;
     font-weight: 600;
     letter-spacing: -0.3px;
 }
@@ -1160,7 +1160,7 @@ body.light-mode footer ul li a:hover {
     font-size: 1.5em;
     margin: 30px 0 15px 0;
     color: #ffffff;
-    font-family: 'Lora', serif;
+    font-family: "Lora", serif;
     font-weight: 600;
     letter-spacing: -0.2px;
 }
@@ -1169,7 +1169,7 @@ body.light-mode footer ul li a:hover {
     font-size: 1.25em;
     margin: 22px 0 12px 0;
     color: #ffffff;
-    font-family: 'Lora', serif;
+    font-family: "Lora", serif;
     font-weight: 600;
     letter-spacing: -0.1px;
 }
@@ -1178,14 +1178,14 @@ body.light-mode footer ul li a:hover {
     font-size: 1.1em;
     margin: 18px 0 10px 0;
     color: #ffffff;
-    font-family: 'Lora', serif;
+    font-family: "Lora", serif;
     font-weight: 600;
     letter-spacing: -0.1px;
 }
 
 .blog-callout {
     background-color: rgba(70, 70, 70, 0.3);
-    border-left: 3px solid #4CAF50;
+    border-left: 3px solid #4caf50;
     padding: 12px 15px;
     margin: 15px 0;
     border-radius: 4px;
@@ -1278,7 +1278,7 @@ body.light-mode .blog-content h5 {
 
 body.light-mode .blog-callout {
     background-color: rgba(240, 240, 240, 0.7);
-    border-left-color: #4CAF50;
+    border-left-color: #4caf50;
     color: #333333;
 }
 
@@ -1357,35 +1357,35 @@ body.light-mode .blog-table td {
         font-size: 0.85em;
         width: 100%;
     }
-    
+
     .blog-table th,
     .blog-table td {
         padding: 6px 4px;
     }
-    
+
     .table-caption {
         font-size: 0.8em;
         width: 100%;
     }
-    
+
     main {
         width: 100%;
         padding: 10px;
         box-sizing: border-box;
         overflow-x: hidden;
     }
-    
+
     .blog-callout {
         width: 100%;
         box-sizing: border-box;
         margin: 15px 0;
     }
-    
+
     .blog-container {
         padding: 10px;
         margin: 5px auto;
     }
-    
+
     .blog-content p,
     .blog-list,
     .blog-list li {
@@ -1430,17 +1430,17 @@ body.light-mode .blog-author-note p {
         max-width: 100%;
         margin: 10px auto;
     }
-    
+
     .blog-title {
         font-size: 1.8em;
         line-height: 1.3;
     }
-    
+
     .blog-content {
         font-size: 1.05em;
         width: 100%;
     }
-    
+
     .blog-content p {
         margin-bottom: 18px;
         line-height: 1.6;
@@ -1448,55 +1448,55 @@ body.light-mode .blog-author-note p {
         width: 100%;
         box-sizing: border-box;
     }
-    
+
     .blog-intro-quote {
         font-size: 1.05em;
         padding-left: 15px;
         width: 100%;
         box-sizing: border-box;
     }
-    
+
     .quote-attribution {
         font-size: 0.75em;
         width: 100%;
     }
-    
+
     .blog-author-note {
         padding: 12px 15px;
         width: 100%;
         box-sizing: border-box;
     }
-    
+
     .blog-content h2 {
         font-size: 1.6em;
         margin: 30px 0 15px 0;
         width: 100%;
     }
-    
+
     .blog-content h3 {
         font-size: 1.35em;
         margin: 25px 0 12px 0;
         width: 100%;
     }
-    
+
     .blog-content h4 {
         font-size: 1.15em;
         margin: 20px 0 10px 0;
         width: 100%;
     }
-    
+
     .blog-content h5 {
         font-size: 1em;
         margin: 18px 0 8px 0;
         width: 100%;
     }
-    
+
     .blog-list {
         width: 100%;
         box-sizing: border-box;
         padding-right: 15px;
     }
-    
+
     .blog-callout {
         padding: 10px 12px;
         font-size: 0.9em;

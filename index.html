@@ -1,407 +1,308 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Google tag (gtag.js) -->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Parth Bibekar</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
-            rel="stylesheet"
-        />
-        <script defer src="script.js"></script>
 
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        />
-        <link
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet"
-        />
+<head>
+    <!-- Google tag (gtag.js) -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parth Bibekar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <script defer src="script.js"></script>
 
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/@chrisoakman/chessboard2@0.5.0/dist/chessboard2.min.css"
-            integrity="sha384-47VeTDpmy4yT21gKPXQcLQYQZwlmz27gEH5NTrOmTk3G/SGvMyltclOW/Q8uE+sL"
-            crossorigin="anonymous"
-        />
-        <script
-            src="https://code.jquery.com/jquery-3.5.1.min.js"
-            integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://unpkg.com/@chrisoakman/chessboard2@0.5.0/dist/chessboard2.min.js"
-            integrity="sha384-/KwQCjA1GWovZNV3QDVtvSMDzO4reGgarF/RqHipr7hIUElH3r5zNl9WEPPOBRIF"
-            crossorigin="anonymous"
-        ></script>
-    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-    <body>
-        <header>
-            <h1 class="professional-font">Parth Bibekar</h1>
-            <p id="changing-text">I am a <span id="typed-text"></span></p>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="assets/CV.pdf" target="_blank">CV</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboard2@0.5.0/dist/chessboard2.min.css"
+        integrity="sha384-47VeTDpmy4yT21gKPXQcLQYQZwlmz27gEH5NTrOmTk3G/SGvMyltclOW/Q8uE+sL" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboard2@0.5.0/dist/chessboard2.min.js"
+        integrity="sha384-/KwQCjA1GWovZNV3QDVtvSMDzO4reGgarF/RqHipr7hIUElH3r5zNl9WEPPOBRIF"
+        crossorigin="anonymous"></script>
+</head>
 
-            <div class="container">
-                <label class="toggle-label" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <i class="material-icons sun">wb_sunny</i>
-                    <i class="material-icons moon">nightlight_round</i>
-                </label>
-            </div>
-        </nav>
+<body>
+    <header>
+        <h1 class="professional-font">Parth Bibekar</h1>
+        <p id="changing-text">I am a <span id="typed-text"></span></p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="assets/CV.pdf" target="_blank">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-        <main>
-            <section id="about" class="block">
-                <h2>About Me</h2>
-                <p>
-                    Hi, I'm Parth. I am a PhD candidate at the
-                    <a
-                        href="https://www.epfl.ch/labs/lbm/"
-                        target="_blank"
-                        class="custom-link"
-                        >Laboratory for Biomolecular Modeling</a
-                    >
-                    at EPFL. My research interests include applications of
-                    machine learning in structural bioinformatics, computational
-                    biophysics and integrative modeling. I enjoy playing chess,
-                    traveling, reading, and building things.
-                </p>
+        <div class="container">
+            <label class="toggle-label" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <i class="material-icons sun">wb_sunny</i>
+                <i class="material-icons moon">nightlight_round</i>
+            </label>
+        </div>
+    </nav>
 
-                <h3>Education</h3>
-                <div class="education">
-                    <div class="degree">
-                        <a href="https://www.epfl.ch/" target="_blank">
-                            <img
-                                src="assets/epfl-logo-new.svg"
-                                alt="EPFL Logo"
-                                class="education-logo"
-                            />
-                        </a>
-                        <div class="details">
-                            <p>PhD in Computational and Quantitative Biology</p>
-                            <p>September 2024 - Present</p>
-                            <p>
-                                Institute of Bioengineering, SV, EPFL,
-                                Switzerland
-                            </p>
-                            <p>
-                                <strong>Advisor:</strong> Prof. Matteo Dal
-                                Peraro
-                            </p>
-                        </div>
-                    </div>
-                    <div class="degree">
-                        <a href="https://www.iiserkol.ac.in/" target="_blank">
-                            <img
-                                src="assets/iiserkol-logo.png"
-                                alt="IISER Kolkata Logo"
-                                class="education-logo"
-                            />
-                        </a>
-                        <div class="details">
-                            <p>
-                                BS-MS (Bachelor's and Master's dual degree) in
-                                Biology with a minor in Computational and Data
-                                Sciences
-                            </p>
-                            <p>2019 - 2024</p>
-                            <p>IISER Kolkata, India</p>
-                            <p>
-                                <strong>MS Thesis:</strong> Applications of
-                                Geometric Deep Learning for Biomolecular
-                                Structure Modeling
-                            </p>
-                            <p>
-                                <strong>Advisor:</strong> Prof. Matteo Dal
-                                Peraro
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="projects" class="block">
-                <h2>Projects</h2>
-
-                <div class="project">
-                    <div class="project-details">
-                        <div
-                            class="project-image"
-                            style="background-color: #d3d3d3"
-                        >
-                            <img
-                                src="assets/risotto_summary.png"
-                                alt="RISoTTo Project Image"
-                                class="rounded-image"
-                            />
-                        </div>
-                        <div class="project-text">
-                            <h3>RISoTTo</h3>
-                            <p>
-                                RIbonucleic acid Sequence design from TerTiary
-                                structure (RISoTTo) is a model I developed
-                                during my MS thesis to predict RNA sequences
-                                from backbone scaffolds. Unlike traditional
-                                approaches, RISoTTo accounts for the surrounding
-                                molecular context, such as proteins, ligands,
-                                and ions, making it a powerful tool for
-                                context-aware RNA design. The preprint is out
-                                now, with code and additional results coming
-                                soon.
-                            </p>
-                            <div class="project-buttons">
-                                <a
-                                    href="https://www.biorxiv.org/content/10.1101/2025.06.21.660801v1"
-                                    target="_blank"
-                                    class="project-button"
-                                >
-                                    <span>Paper</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 1: PeSTo-Carbs -->
-                <div class="project">
-                    <div class="project-details">
-                        <div
-                            class="project-image"
-                            style="background-color: #d3d3d3"
-                        >
-                            <img
-                                src="assets/pesto_carbs_summary.png"
-                                alt="PeSTo-Carbs"
-                                class="rounded-image"
-                            />
-                        </div>
-                        <div class="project-text">
-                            <h3>PeSTo-Carbs</h3>
-                            <p>
-                                PeSTo-Carbs, published in The Journal of
-                                Chemical Theory and Computation, is a geometric
-                                transformer model extending our earlier work on
-                                PeSTo. It is specifically designed to predict
-                                binding interfaces between proteins and
-                                carbohydrates, including protein–cyclodextrin
-                                interactions, with high accuracy.
-                            </p>
-                            <div class="project-buttons">
-                                <a
-                                    href="https://github.com/LBM-EPFL/PeSTo-Carbs"
-                                    target="_blank"
-                                    class="project-button"
-                                >
-                                    <img
-                                        src="assets/github-icon-38976.png"
-                                        alt="GitHub"
-                                        class="button-icon"
-                                    />
-                                    <span>Code</span>
-                                </a>
-                                <a
-                                    href="https://doi.org/10.1021/acs.jctc.3c01145"
-                                    target="_blank"
-                                    class="project-button"
-                                >
-                                    <span>Paper</span>
-                                </a>
-                                <a
-                                    href="https://pubs.acs.org/toc/jctcce/20/8"
-                                    target="_blank"
-                                    class="project-button"
-                                >
-                                    <span>Journal Cover</span>
-                                </a>
-                                <a
-                                    href="https://pesto.epfl.ch/"
-                                    target="_blank"
-                                    class="project-button"
-                                >
-                                    <span>Web-server</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: Welearn-bot -->
-                <div class="project">
-                    <div class="project-details">
-                        <div class="project-image">
-                            <img
-                                src="assets/welearn-bot.gif"
-                                alt="Welearn-bot"
-                                class="rounded-image"
-                            />
-                        </div>
-                        <div class="project-text">
-                            <h3>Welearn-bot</h3>
-                            <p>
-                                Welearn-bot is a CLI application to interact
-                                with welearn in the IISER Kolkata domain. The
-                                bot was created and is actively maintained by
-                                Satvik, Abhay, Amarjeet and I. It can be used to
-                                download all the necessary files from welearn,
-                                list your assignments, etc. It has Google
-                                Calendar integrated to directly add due
-                                assignments to your calendar.
-                            </p>
-                            <div class="project-buttons">
-                                <a
-                                    href="https://github.com/ParthBibekar/Welearn-bot"
-                                    target="_blank"
-                                    class="project-button"
-                                >
-                                    <img
-                                        src="assets/github-icon-38976.png"
-                                        alt="GitHub"
-                                        class="button-icon"
-                                    />
-                                    <span>Code</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- lichess block -->
-
-            <!-- lichess block -->
-            <section id="lichess-playing-card" class="block">
-                <div class="lichess-content">
-                    <div id="lichess-board-container">
-                        <!-- Chess Game Details -->
-                        <div id="chess-game-details">
-                            <p>
-                                <a
-                                    href="https://www.chessgames.com/perl/chessgame?gid=1125358"
-                                    target="_blank"
-                                    class="custom-link"
-                                    >K Gerasimov vs Vasily Smyslov</a
-                                >
-                            </p>
-                            <p>
-                                Moscow Pioneer Home Championship (1935), Moscow
-                                URS
-                            </p>
-                            <p>Rubinstein Opening (D05) · 0-1</p>
-                        </div>
-                        <!-- Chess Game -->
-                        <!-- board embeded using https://chessboardjs.com/v2/ -->
-                        <div id="myBoard"></div>
-                        <div class="button-container">
-                            <button id="prevBtn">&#9664;</button>
-                            <!-- Previous Move Button -->
-                            <button id="nextBtn">&#9654;</button>
-                            <!-- Next Move Button -->
-                            <button id="startPositionBtn">&#8635;</button>
-                            <!-- Start Position Button -->
-                        </div>
-                    </div>
-
-                    <div id="right-column">
-                        <div id="plot-container">
-                            <div id="plot"></div>
-                        </div>
-                        <div id="lichess-info-box">
-                            <div id="lichess-status">
-                                <span id="lichess-status-dot"></span>
-                                <span id="lichess-username">Parth_b</span>
-                                <a
-                                    id="challenge-me"
-                                    href="https://lichess.org/@/Parth_b"
-                                    target="_blank"
-                                    >Challenge Me</a
-                                >
-                            </div>
-                            <div id="lichess-ratings">
-                                <div class="lichess-rating">
-                                    <i class="fas fa-rocket"></i>
-                                    <span id="lichess-rapid">-</span>
-                                </div>
-                                <div class="lichess-rating">
-                                    <i class="fas fa-fire"></i>
-                                    <span id="lichess-blitz">-</span>
-                                </div>
-                                <div class="lichess-rating">
-                                    <i class="fas fa-bolt"></i>
-                                    <span id="lichess-bullet">-</span>
-                                </div>
-                                <div class="lichess-rating">
-                                    <i class="fas fa-puzzle-piece"></i>
-                                    <span id="lichess-puzzle">-</span>
-                                </div>
-                                <div class="lichess-rating">
-                                    <i class="fas fa-dice"></i>
-                                    <span id="lichess-960">-</span>
-                                </div>
-                                <div class="lichess-rating">
-                                    <i class="fas fa-wind"></i>
-                                    <span id="lichess-puzzle-storm">16</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <script src="lichess_script.js"></script>
-        </main>
-
-        <footer>
-            <p>Connect with me:</p>
-            <ul>
-                <li>
-                    <a href="https://github.com/ParthBibekar" target="_blank"
-                        >GitHub</a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="https://www.linkedin.com/in/parth-bibekar-a8a2a0247/"
-                        target="_blank"
-                        >LinkedIn</a
-                    >
-                </li>
-                <li>
-                    <a href="https://x.com/BibekarParth" target="_blank"
-                        >Twitter</a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="https://bsky.app/profile/parthbibekar.bsky.social"
-                        target="_blank"
-                        >Bluesky</a
-                    >
-                </li>
-                <li>
-                    <a href="https://lichess.org/@/Parth_b" target="_blank"
-                        >Lichess</a
-                    >
-                </li>
-                <!-- Add other social media links -->
-            </ul>
-            <p style="font-size: small; color: #a9a9a9">
-                Made with ❤️ by Parth Bibekar
+    <main>
+        <section id="about" class="block">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Parth. I am a PhD candidate at the
+                <a href="https://www.epfl.ch/labs/lbm/" target="_blank" class="custom-link">Laboratory for Biomolecular
+                    Modeling</a>
+                at EPFL. My research interests include applications of
+                machine learning in structural bioinformatics, computational
+                biophysics and integrative modeling. I enjoy playing chess,
+                traveling, reading, and building things.
             </p>
-        </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <!-- <script src="script.js"></script> -->
-    </body>
+            <h3>Education</h3>
+            <div class="education">
+                <div class="degree">
+                    <a href="https://www.epfl.ch/" target="_blank">
+                        <img src="assets/epfl-logo-new.svg" alt="EPFL Logo" class="education-logo" />
+                    </a>
+                    <div class="details">
+                        <p>PhD in Computational and Quantitative Biology</p>
+                        <p>September 2024 - Present</p>
+                        <p>
+                            Institute of Bioengineering, SV, EPFL,
+                            Switzerland
+                        </p>
+                        <p>
+                            <strong>Advisor:</strong> Prof. Matteo Dal
+                            Peraro
+                        </p>
+                    </div>
+                </div>
+                <div class="degree">
+                    <a href="https://www.iiserkol.ac.in/" target="_blank">
+                        <img src="assets/iiserkol-logo.png" alt="IISER Kolkata Logo" class="education-logo" />
+                    </a>
+                    <div class="details">
+                        <p>
+                            BS-MS (Bachelor's and Master's dual degree) in
+                            Biology with a minor in Computational and Data
+                            Sciences
+                        </p>
+                        <p>2019 - 2024</p>
+                        <p>IISER Kolkata, India</p>
+                        <p>
+                            <strong>MS Thesis:</strong> Applications of
+                            Geometric Deep Learning for Biomolecular
+                            Structure Modeling
+                        </p>
+                        <p>
+                            <strong>Advisor:</strong> Prof. Matteo Dal
+                            Peraro
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="block">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <div class="project-details">
+                    <div class="project-image" style="background-color: #d3d3d3">
+                        <img src="assets/risotto_summary.png" alt="RISoTTo Project Image" class="rounded-image" />
+                    </div>
+                    <div class="project-text">
+                        <h3>RISoTTo</h3>
+                        <p>
+                            RRISoTTo (RIbonucleic acid Sequence design from TerTiary structure) is a parameter-free
+                            geometric deep learning approach that generates RNA sequences conditioned on both their
+                            backbone scaffolds and the surrounding molecular context. A preprint describing RISoTTo has been
+                            recently posted on bioRxiv and I presented a poster about it at NeurIPS AI4D3 workshop 2025. More updates with experimental validation will follow soon.
+                        </p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/LBM-EPFL/RISoTTo" target="_blank" class="project-button">
+                                <img src="assets/github-icon-38976.png" alt="GitHub" class="button-icon" />
+                                <span>Code</span>
+                            </a>
+                            <a href="https://doi.org/10.1101/2025.06.21.660801" target="_blank" class="project-button">
+                                <span>Paper</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 1: PeSTo-Carbs -->
+            <div class="project">
+                <div class="project-details">
+                    <div class="project-image" style="background-color: #d3d3d3">
+                        <img src="assets/pesto_carbs_summary.png" alt="PeSTo-Carbs" class="rounded-image" />
+                    </div>
+                    <div class="project-text">
+                        <h3>PeSTo-Carbs</h3>
+                        <p>
+                            PeSTo-Carbs, published in The Journal of
+                            Chemical Theory and Computation, is a geometric
+                            transformer model extending our earlier work on
+                            PeSTo. It is specifically designed to predict
+                            binding interfaces between proteins and
+                            carbohydrates, including protein–cyclodextrin
+                            interactions, with high accuracy.
+                        </p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/LBM-EPFL/PeSTo-Carbs" target="_blank" class="project-button">
+                                <img src="assets/github-icon-38976.png" alt="GitHub" class="button-icon" />
+                                <span>Code</span>
+                            </a>
+                            <a href="https://doi.org/10.1021/acs.jctc.3c01145" target="_blank" class="project-button">
+                                <span>Paper</span>
+                            </a>
+                            <a href="https://pubs.acs.org/toc/jctcce/20/8" target="_blank" class="project-button">
+                                <span>Journal Cover</span>
+                            </a>
+                            <a href="https://pesto.epfl.ch/" target="_blank" class="project-button">
+                                <span>Web-server</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Welearn-bot -->
+            <div class="project">
+                <div class="project-details">
+                    <div class="project-image">
+                        <img src="assets/welearn-bot.gif" alt="Welearn-bot" class="rounded-image" />
+                    </div>
+                    <div class="project-text">
+                        <h3>Welearn-bot</h3>
+                        <p>
+                            Welearn-bot is a CLI application to interact
+                            with welearn in the IISER Kolkata domain. The
+                            bot was created and is actively maintained by
+                            Satvik, Abhay, Amarjeet and I. It can be used to
+                            download all the necessary files from welearn,
+                            list your assignments, etc. It has Google
+                            Calendar integrated to directly add due
+                            assignments to your calendar.
+                        </p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/ParthBibekar/Welearn-bot" target="_blank"
+                                class="project-button">
+                                <img src="assets/github-icon-38976.png" alt="GitHub" class="button-icon" />
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- lichess block -->
+
+        <!-- lichess block -->
+        <section id="lichess-playing-card" class="block">
+            <div class="lichess-content">
+                <div id="lichess-board-container">
+                    <!-- Chess Game Details -->
+                    <div id="chess-game-details">
+                        <p>
+                            <a href="https://www.chessgames.com/perl/chessgame?gid=1125358" target="_blank"
+                                class="custom-link">K Gerasimov vs Vasily Smyslov</a>
+                        </p>
+                        <p>
+                            Moscow Pioneer Home Championship (1935), Moscow
+                            URS
+                        </p>
+                        <p>Rubinstein Opening (D05) · 0-1</p>
+                    </div>
+                    <!-- Chess Game -->
+                    <!-- board embeded using https://chessboardjs.com/v2/ -->
+                    <div id="myBoard"></div>
+                    <div class="button-container">
+                        <button id="prevBtn">&#9664;</button>
+                        <!-- Previous Move Button -->
+                        <button id="nextBtn">&#9654;</button>
+                        <!-- Next Move Button -->
+                        <button id="startPositionBtn">&#8635;</button>
+                        <!-- Start Position Button -->
+                    </div>
+                </div>
+
+                <div id="right-column">
+                    <div id="plot-container">
+                        <div id="plot"></div>
+                    </div>
+                    <div id="lichess-info-box">
+                        <div id="lichess-status">
+                            <span id="lichess-status-dot"></span>
+                            <span id="lichess-username">Parth_b</span>
+                            <a id="challenge-me" href="https://lichess.org/@/Parth_b" target="_blank">Challenge Me</a>
+                        </div>
+                        <div id="lichess-ratings">
+                            <div class="lichess-rating">
+                                <i class="fas fa-rocket"></i>
+                                <span id="lichess-rapid">-</span>
+                            </div>
+                            <div class="lichess-rating">
+                                <i class="fas fa-fire"></i>
+                                <span id="lichess-blitz">-</span>
+                            </div>
+                            <div class="lichess-rating">
+                                <i class="fas fa-bolt"></i>
+                                <span id="lichess-bullet">-</span>
+                            </div>
+                            <div class="lichess-rating">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span id="lichess-puzzle">-</span>
+                            </div>
+                            <div class="lichess-rating">
+                                <i class="fas fa-dice"></i>
+                                <span id="lichess-960">-</span>
+                            </div>
+                            <div class="lichess-rating">
+                                <i class="fas fa-wind"></i>
+                                <span id="lichess-puzzle-storm">16</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="lichess_script.js"></script>
+    </main>
+
+    <footer>
+        <p>Connect with me:</p>
+        <ul>
+            <li>
+                <a href="https://github.com/ParthBibekar" target="_blank">GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/parth-bibekar-a8a2a0247/" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://x.com/BibekarParth" target="_blank">Twitter</a>
+            </li>
+            <li>
+                <a href="https://bsky.app/profile/parthbibekar.bsky.social" target="_blank">Bluesky</a>
+            </li>
+            <li>
+                <a href="https://lichess.org/@/Parth_b" target="_blank">Lichess</a>
+            </li>
+            <!-- Add other social media links -->
+        </ul>
+        <p style="font-size: small; color: #a9a9a9">
+            Made with ❤️ by Parth Bibekar
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- <script src="script.js"></script> -->
+</body>
+
 </html>

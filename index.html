@@ -1,308 +1,516 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Parth Bibekar</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="cv-container">
+            <!-- Sidebar -->
+            <aside class="cv-sidebar">
+                <div class="sidebar-content">
+                    <!-- Theme Toggle -->
+                    <div class="theme-toggle-wrapper">
+                        <button
+                            id="theme-toggle"
+                            class="theme-toggle"
+                            aria-label="Toggle dark mode"
+                            aria-pressed="false"
+                        >
+                            <i class="fas fa-sun sun"></i>
+                            <i class="fas fa-moon moon"></i>
+                        </button>
+                    </div>
 
-<head>
-    <!-- Google tag (gtag.js) -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parth Bibekar</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet" />
-    <script defer src="script.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboard2@0.5.0/dist/chessboard2.min.css"
-        integrity="sha384-47VeTDpmy4yT21gKPXQcLQYQZwlmz27gEH5NTrOmTk3G/SGvMyltclOW/Q8uE+sL" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@chrisoakman/chessboard2@0.5.0/dist/chessboard2.min.js"
-        integrity="sha384-/KwQCjA1GWovZNV3QDVtvSMDzO4reGgarF/RqHipr7hIUElH3r5zNl9WEPPOBRIF"
-        crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <header>
-        <h1 class="professional-font">Parth Bibekar</h1>
-        <p id="changing-text">I am a <span id="typed-text"></span></p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="assets/CV.pdf" target="_blank">CV</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-        <div class="container">
-            <label class="toggle-label" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <i class="material-icons sun">wb_sunny</i>
-                <i class="material-icons moon">nightlight_round</i>
-            </label>
-        </div>
-    </nav>
-
-    <main>
-        <section id="about" class="block">
-            <h2>About Me</h2>
-            <p>
-                Hi, I'm Parth. I am a PhD candidate at the
-                <a href="https://www.epfl.ch/labs/lbm/" target="_blank" class="custom-link">Laboratory for Biomolecular
-                    Modeling</a>
-                at EPFL. My research interests include applications of
-                machine learning in structural bioinformatics, computational
-                biophysics and integrative modeling. I enjoy playing chess,
-                traveling, reading, and building things.
-            </p>
-
-            <h3>Education</h3>
-            <div class="education">
-                <div class="degree">
-                    <a href="https://www.epfl.ch/" target="_blank">
-                        <img src="assets/epfl-logo-new.svg" alt="EPFL Logo" class="education-logo" />
-                    </a>
-                    <div class="details">
-                        <p>PhD in Computational and Quantitative Biology</p>
-                        <p>September 2024 - Present</p>
-                        <p>
-                            Institute of Bioengineering, SV, EPFL,
-                            Switzerland
+                    <!-- Profile -->
+                    <div class="profile-section">
+                        <div class="profile-avatar">
+                            <img src="assets/spaghetti_monster.png" alt="Parth Bibekar" />
+                        </div>
+                        <h1 class="profile-name">Parth Bibekar</h1>
+                        <p class="profile-title">
+                            PhD Candidate in Computational & Quantitative
+                            Biology
                         </p>
-                        <p>
-                            <strong>Advisor:</strong> Prof. Matteo Dal
-                            Peraro
-                        </p>
+                        <p class="profile-institution">EPFL, Switzerland</p>
+                    </div>
+
+                    <!-- Navigation -->
+                    <nav class="sidebar-nav">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="#education" class="nav-link">Education</a>
+                        <a href="publications.html" class="nav-link"
+                            >Publications</a
+                        >
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#teaching" class="nav-link">Teaching</a>
+                        <a href="#talks" class="nav-link">Talks</a>
+                        <a href="blogs.html" class="nav-link">Blog</a>
+                    </nav>
+
+                    <!-- Contact -->
+                    <div class="sidebar-section">
+                        <h3>Contact</h3>
+                        <ul class="sidebar-list">
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:parth.bibekar@epfl.ch"
+                                    >parth.bibekar@epfl.ch</a
+                                >
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i> Lausanne,
+                                Switzerland
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Profiles -->
+                    <div class="sidebar-section">
+                        <h3>Profiles</h3>
+                        <ul class="sidebar-list">
+                            <li>
+                                <a
+                                    href="https://scholar.google.com/citations?user=Sx6KhU4AAAAJ&hl=en"
+                                    target="_blank"
+                                    ><i class="fas fa-graduation-cap"></i>
+                                    Google Scholar</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://github.com/ParthBibekar"
+                                    target="_blank"
+                                    ><i class="fab fa-github"></i> GitHub</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/in/parth-bibekar-a8a2a0247/"
+                                    target="_blank"
+                                    ><i class="fab fa-linkedin"></i> LinkedIn</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://x.com/BibekarParth"
+                                    target="_blank"
+                                    ><i class="fab fa-x-twitter"></i> Twitter</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://bsky.app/profile/parthbibekar.bsky.social"
+                                    target="_blank"
+                                    ><i class="fas fa-cloud"></i> Bluesky</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- CV Download -->
+                    <div class="sidebar-section">
+                        <a
+                            href="assets/CV.pdf"
+                            target="_blank"
+                            class="cv-download-btn"
+                            ><i class="fas fa-file-pdf"></i> Download CV</a
+                        >
                     </div>
                 </div>
-                <div class="degree">
-                    <a href="https://www.iiserkol.ac.in/" target="_blank">
-                        <img src="assets/iiserkol-logo.png" alt="IISER Kolkata Logo" class="education-logo" />
-                    </a>
-                    <div class="details">
-                        <p>
-                            BS-MS (Bachelor's and Master's dual degree) in
-                            Biology with a minor in Computational and Data
-                            Sciences
+            </aside>
+
+            <!-- Main Content -->
+            <main class="cv-main">
+                <!-- About -->
+                <section class="cv-section">
+                    <h2 class="section-title">About</h2>
+                    <p>
+                        I am a PhD candidate at the
+                        <a
+                            href="https://www.epfl.ch/labs/lbm/"
+                            target="_blank"
+                            class="custom-link"
+                            >Laboratory for Biomolecular Modeling</a
+                        >
+                        at EPFL. My research interests include applications of
+                        machine learning in structural bioinformatics,
+                        computational biophysics and integrative modeling. I
+                        enjoy playing chess, traveling, reading, and building
+                        things.
+                    </p>
+                </section>
+
+                <!-- Education -->
+                <section id="education" class="cv-section">
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <div class="education-meta">
+                                <div class="education-logo">
+                                    <img
+                                        src="assets/epfl-logo-new.svg"
+                                        alt="EPFL"
+                                    />
+                                </div>
+                                <div class="education-info">
+                                    <h3>
+                                        PhD in Computational and Quantitative
+                                        Biology
+                                    </h3>
+                                    <p class="education-institution">
+                                        <a
+                                            href="https://www.epfl.ch/"
+                                            target="_blank"
+                                            >EPFL</a
+                                        >, Switzerland
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="education-date">2024 – Present</span>
+                        </div>
+                        <p class="education-detail">
+                            <strong>Advisor:</strong>
+                            <a
+                                href="https://people.epfl.ch/matteo.dalperaro"
+                                target="_blank"
+                                class="custom-link"
+                                >Prof. Matteo Dal Peraro</a
+                            >
                         </p>
-                        <p>2019 - 2024</p>
-                        <p>IISER Kolkata, India</p>
-                        <p>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <div class="education-meta">
+                                <div class="education-logo">
+                                    <img
+                                        src="assets/iiserkol-logo.png"
+                                        alt="IISER Kolkata"
+                                    />
+                                </div>
+                                <div class="education-info">
+                                    <h3>
+                                        BS-MS in Biology (Minor in Computational
+                                        and Data Sciences)
+                                    </h3>
+                                    <p class="education-institution">
+                                        <a
+                                            href="https://www.iiserkol.ac.in/"
+                                            target="_blank"
+                                            >IISER Kolkata</a
+                                        >, India
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="education-date">2019 – 2024</span>
+                        </div>
+                        <p class="education-detail">
                             <strong>MS Thesis:</strong> Applications of
-                            Geometric Deep Learning for Biomolecular
-                            Structure Modeling
+                            Geometric Deep Learning for Biomolecular Structure
+                            Modeling
                         </p>
-                        <p>
-                            <strong>Advisor:</strong> Prof. Matteo Dal
-                            Peraro
+                        <p class="education-detail">
+                            <strong>Advisor:</strong>
+                            <a
+                                href="https://people.epfl.ch/matteo.dalperaro"
+                                target="_blank"
+                                class="custom-link"
+                                >Prof. Matteo Dal Peraro</a
+                            >
                         </p>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="projects" class="block">
-            <h2>Projects</h2>
+                <!-- Projects -->
+                <section id="projects" class="cv-section">
+                    <h2 class="section-title">Projects</h2>
 
-            <div class="project">
-                <div class="project-details">
-                    <div class="project-image" style="background-color: #d3d3d3">
-                        <img src="assets/risotto_summary.png" alt="RISoTTo Project Image" class="rounded-image" />
-                    </div>
-                    <div class="project-text">
+                    <div class="project-item">
                         <h3>RISoTTo</h3>
-                        <p>
-                            RRISoTTo (RIbonucleic acid Sequence design from TerTiary structure) is a parameter-free
-                            geometric deep learning approach that generates RNA sequences conditioned on both their
-                            backbone scaffolds and the surrounding molecular context. A preprint describing RISoTTo has been
-                            recently posted on bioRxiv and I presented a poster about it at NeurIPS AI4D3 workshop 2025. More updates with experimental validation will follow soon.
+                        <p class="project-desc">
+                            A parameter-free geometric deep learning approach
+                            that generates RNA sequences conditioned on both
+                            their backbone scaffolds and the surrounding
+                            molecular context. Presented at NeurIPS AI4D3
+                            workshop 2025.
                         </p>
-                        <div class="project-buttons">
-                            <a href="https://github.com/LBM-EPFL/RISoTTo" target="_blank" class="project-button">
-                                <img src="assets/github-icon-38976.png" alt="GitHub" class="button-icon" />
-                                <span>Code</span>
-                            </a>
-                            <a href="https://doi.org/10.1101/2025.06.21.660801" target="_blank" class="project-button">
-                                <span>Paper</span>
-                            </a>
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/LBM-EPFL/RISoTTo"
+                                target="_blank"
+                                class="project-link"
+                                ><i class="fab fa-github"></i> Code</a
+                            >
+                            <a
+                                href="https://doi.org/10.1101/2025.06.21.660801"
+                                target="_blank"
+                                class="project-link"
+                                >Paper</a
+                            >
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Project 1: PeSTo-Carbs -->
-            <div class="project">
-                <div class="project-details">
-                    <div class="project-image" style="background-color: #d3d3d3">
-                        <img src="assets/pesto_carbs_summary.png" alt="PeSTo-Carbs" class="rounded-image" />
-                    </div>
-                    <div class="project-text">
+                    <div class="project-item">
                         <h3>PeSTo-Carbs</h3>
-                        <p>
-                            PeSTo-Carbs, published in The Journal of
-                            Chemical Theory and Computation, is a geometric
-                            transformer model extending our earlier work on
-                            PeSTo. It is specifically designed to predict
-                            binding interfaces between proteins and
+                        <p class="project-desc">
+                            A geometric transformer model extending PeSTo to
+                            predict binding interfaces between proteins and
                             carbohydrates, including protein–cyclodextrin
-                            interactions, with high accuracy.
+                            interactions, with high accuracy. Featured as
+                            Journal Cover.
                         </p>
-                        <div class="project-buttons">
-                            <a href="https://github.com/LBM-EPFL/PeSTo-Carbs" target="_blank" class="project-button">
-                                <img src="assets/github-icon-38976.png" alt="GitHub" class="button-icon" />
-                                <span>Code</span>
-                            </a>
-                            <a href="https://doi.org/10.1021/acs.jctc.3c01145" target="_blank" class="project-button">
-                                <span>Paper</span>
-                            </a>
-                            <a href="https://pubs.acs.org/toc/jctcce/20/8" target="_blank" class="project-button">
-                                <span>Journal Cover</span>
-                            </a>
-                            <a href="https://pesto.epfl.ch/" target="_blank" class="project-button">
-                                <span>Web-server</span>
-                            </a>
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/LBM-EPFL/PeSTo-Carbs"
+                                target="_blank"
+                                class="project-link"
+                                ><i class="fab fa-github"></i> Code</a
+                            >
+                            <a
+                                href="https://doi.org/10.1021/acs.jctc.3c01145"
+                                target="_blank"
+                                class="project-link"
+                                >Paper</a
+                            >
+                            <a
+                                href="https://pesto.epfl.ch/"
+                                target="_blank"
+                                class="project-link"
+                                >Web Server</a
+                            >
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Project 2: Welearn-bot -->
-            <div class="project">
-                <div class="project-details">
-                    <div class="project-image">
-                        <img src="assets/welearn-bot.gif" alt="Welearn-bot" class="rounded-image" />
-                    </div>
-                    <div class="project-text">
+                    <div class="project-item">
                         <h3>Welearn-bot</h3>
-                        <p>
-                            Welearn-bot is a CLI application to interact
-                            with welearn in the IISER Kolkata domain. The
-                            bot was created and is actively maintained by
-                            Satvik, Abhay, Amarjeet and I. It can be used to
-                            download all the necessary files from welearn,
-                            list your assignments, etc. It has Google
-                            Calendar integrated to directly add due
-                            assignments to your calendar.
+                        <p class="project-desc">
+                            A CLI application to interact with welearn in the
+                            IISER Kolkata domain. Supports file downloads,
+                            assignment listing, and Google Calendar integration.
                         </p>
-                        <div class="project-buttons">
-                            <a href="https://github.com/ParthBibekar/Welearn-bot" target="_blank"
-                                class="project-button">
-                                <img src="assets/github-icon-38976.png" alt="GitHub" class="button-icon" />
-                                <span>Code</span>
-                            </a>
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/ParthBibekar/Welearn-bot"
+                                target="_blank"
+                                class="project-link"
+                                ><i class="fab fa-github"></i> Code</a
+                            >
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <!-- lichess block -->
+                <!-- Teaching -->
+                <section id="teaching" class="cv-section">
+                    <h2 class="section-title">Teaching</h2>
 
-        <!-- lichess block -->
-        <section id="lichess-playing-card" class="block">
-            <div class="lichess-content">
-                <div id="lichess-board-container">
-                    <!-- Chess Game Details -->
-                    <div id="chess-game-details">
-                        <p>
-                            <a href="https://www.chessgames.com/perl/chessgame?gid=1125358" target="_blank"
-                                class="custom-link">K Gerasimov vs Vasily Smyslov</a>
-                        </p>
-                        <p>
-                            Moscow Pioneer Home Championship (1935), Moscow
-                            URS
-                        </p>
-                        <p>Rubinstein Opening (D05) · 0-1</p>
-                    </div>
-                    <!-- Chess Game -->
-                    <!-- board embeded using https://chessboardjs.com/v2/ -->
-                    <div id="myBoard"></div>
-                    <div class="button-container">
-                        <button id="prevBtn">&#9664;</button>
-                        <!-- Previous Move Button -->
-                        <button id="nextBtn">&#9654;</button>
-                        <!-- Next Move Button -->
-                        <button id="startPositionBtn">&#8635;</button>
-                        <!-- Start Position Button -->
-                    </div>
-                </div>
-
-                <div id="right-column">
-                    <div id="plot-container">
-                        <div id="plot"></div>
-                    </div>
-                    <div id="lichess-info-box">
-                        <div id="lichess-status">
-                            <span id="lichess-status-dot"></span>
-                            <span id="lichess-username">Parth_b</span>
-                            <a id="challenge-me" href="https://lichess.org/@/Parth_b" target="_blank">Challenge Me</a>
+                    <div class="teaching-item">
+                        <div class="teaching-header">
+                            <div class="teaching-info">
+                                <h3>Teaching Assistant — EPFL Team iGEM</h3>
+                                <p class="teaching-institution">
+                                    EPFL, Switzerland
+                                </p>
+                            </div>
+                            <span class="teaching-date">2026</span>
                         </div>
-                        <div id="lichess-ratings">
-                            <div class="lichess-rating">
-                                <i class="fas fa-rocket"></i>
-                                <span id="lichess-rapid">-</span>
+                        <p class="teaching-detail">
+                            Supervised students for the computational and
+                            mathematical modeling aspects of a synthetic biology
+                            project.
+                        </p>
+                    </div>
+
+                    <div class="teaching-item">
+                        <div class="teaching-header">
+                            <div class="teaching-info">
+                                <h3>
+                                    Teaching Assistant — BIOENG-455:
+                                    Computational Cell Biology
+                                </h3>
+                                <p class="teaching-institution">
+                                    EPFL, Switzerland
+                                </p>
                             </div>
-                            <div class="lichess-rating">
-                                <i class="fas fa-fire"></i>
-                                <span id="lichess-blitz">-</span>
+                            <span class="teaching-date">2025</span>
+                        </div>
+                        <p class="teaching-detail">
+                            Supervised students for various aspects of the
+                            course.
+                        </p>
+                    </div>
+
+                    <div class="teaching-item">
+                        <div class="teaching-header">
+                            <div class="teaching-info">
+                                <h3>
+                                    Teaching Assistant — BIO-315: Structural
+                                    Biology
+                                </h3>
+                                <p class="teaching-institution">
+                                    EPFL, Switzerland
+                                </p>
                             </div>
-                            <div class="lichess-rating">
-                                <i class="fas fa-bolt"></i>
-                                <span id="lichess-bullet">-</span>
+                            <span class="teaching-date">2024, 2026</span>
+                        </div>
+                        <p class="teaching-detail">
+                            Supervised students for modules: Molecular Dynamics,
+                            Molecular Modeling, and CryoEM analysis.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Talks -->
+                <section id="talks" class="cv-section">
+                    <h2 class="section-title">Talks &amp; Conferences</h2>
+
+                    <div class="talk-list">
+                        <div class="talk-item">
+                            <span class="talk-date">Mar 2026</span>
+                            <div class="talk-body">
+                                <p class="talk-title">
+                                    Physics of Living Systems Seminar
+                                </p>
+                                <div class="talk-meta">
+                                    <span class="talk-type talk">Talk</span>
+                                    <span class="talk-location"
+                                        >EPFL, Switzerland</span
+                                    >
+                                </div>
                             </div>
-                            <div class="lichess-rating">
-                                <i class="fas fa-puzzle-piece"></i>
-                                <span id="lichess-puzzle">-</span>
+                        </div>
+
+                        <div class="talk-item">
+                            <span class="talk-date">Jan 2026</span>
+                            <div class="talk-body">
+                                <p class="talk-title">EPFL AIxBIO Seminar</p>
+                                <div class="talk-meta">
+                                    <span class="talk-type talk">Talk</span>
+                                    <span class="talk-location"
+                                        >EPFL, Switzerland</span
+                                    >
+                                </div>
                             </div>
-                            <div class="lichess-rating">
-                                <i class="fas fa-dice"></i>
-                                <span id="lichess-960">-</span>
+                        </div>
+
+                        <div class="talk-item">
+                            <span class="talk-date">Jan 2026</span>
+                            <div class="talk-body">
+                                <p class="talk-title">Swiss RNA Workshop</p>
+                                <div class="talk-meta">
+                                    <span class="talk-type poster">Poster</span>
+                                    <span class="talk-location"
+                                        >Bern, Switzerland</span
+                                    >
+                                </div>
                             </div>
-                            <div class="lichess-rating">
-                                <i class="fas fa-wind"></i>
-                                <span id="lichess-puzzle-storm">16</span>
+                        </div>
+
+                        <div class="talk-item">
+                            <span class="talk-date">Jan 2026</span>
+                            <div class="talk-body">
+                                <p class="talk-title">
+                                    frontiers2026 Symposium on
+                                    NanoBioEngineering
+                                </p>
+                                <div class="talk-meta">
+                                    <span class="talk-type talk">Talk</span>
+                                    <span class="talk-location"
+                                        >EPFL, Switzerland</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="talk-item">
+                            <span class="talk-date">Jan 2026</span>
+                            <div class="talk-body">
+                                <p class="talk-title">
+                                    SIB AI4Biomolecules SIG Seminar
+                                </p>
+                                <div class="talk-meta">
+                                    <span class="talk-type talk">Talk</span>
+                                    <span class="talk-location"
+                                        >Bern, Switzerland</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="talk-item">
+                            <span class="talk-date">Dec 2025</span>
+                            <div class="talk-body">
+                                <p class="talk-title">NeurIPS AI4D3 Workshop</p>
+                                <div class="talk-meta">
+                                    <span class="talk-type poster">Poster</span>
+                                    <span class="talk-location"
+                                        >San Diego, USA</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="talk-item">
+                            <span class="talk-date">Oct 2025</span>
+                            <div class="talk-body">
+                                <p class="talk-title">European RosettaCon</p>
+                                <div class="talk-meta">
+                                    <span class="talk-type poster">Poster</span>
+                                    <span class="talk-location"
+                                        >Ljubljana, Slovenia</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="talk-item">
+                            <span class="talk-date">Oct 2025</span>
+                            <div class="talk-body">
+                                <p class="talk-title">
+                                    Structure Based Drug Discovery
+                                </p>
+                                <div class="talk-meta">
+                                    <span class="talk-type poster">Poster</span>
+                                    <span class="talk-location"
+                                        >Sestri Levante, Italy</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="talk-item">
+                            <span class="talk-date">Nov 2024</span>
+                            <div class="talk-body">
+                                <p class="talk-title">European RosettaCon</p>
+                                <div class="talk-meta">
+                                    <span class="talk-type poster">Poster</span>
+                                    <span class="talk-location"
+                                        >Copenhagen, Denmark</span
+                                    >
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <script src="lichess_script.js"></script>
-    </main>
+                </section>
 
-    <footer>
-        <p>Connect with me:</p>
-        <ul>
-            <li>
-                <a href="https://github.com/ParthBibekar" target="_blank">GitHub</a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/parth-bibekar-a8a2a0247/" target="_blank">LinkedIn</a>
-            </li>
-            <li>
-                <a href="https://x.com/BibekarParth" target="_blank">Twitter</a>
-            </li>
-            <li>
-                <a href="https://bsky.app/profile/parthbibekar.bsky.social" target="_blank">Bluesky</a>
-            </li>
-            <li>
-                <a href="https://lichess.org/@/Parth_b" target="_blank">Lichess</a>
-            </li>
-            <!-- Add other social media links -->
-        </ul>
-        <p style="font-size: small; color: #a9a9a9">
-            Made with ❤️ by Parth Bibekar
-        </p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <!-- <script src="script.js"></script> -->
-</body>
-
+                <footer class="cv-footer">
+                    <p>© 2025 Parth Bibekar</p>
+                </footer>
+            </main>
+        </div>
+    </body>
 </html>

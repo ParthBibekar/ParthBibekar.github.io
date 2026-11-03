@@ -3,147 +3,67 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Blog | Parth Bibekar</title>
-        <link rel="stylesheet" href="styles.css" />
+        <title>Blog · Parth Bibekar</title>
+        <meta name="description" content="Writing by Parth Bibekar." />
+        <link rel="icon" href="assets/spaghetti_monster.png" />
+        <script>
+            try {
+                var t = localStorage.getItem("theme");
+                if (t) document.documentElement.dataset.theme = t;
+            } catch (e) {}
+        </script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
             rel="stylesheet"
         />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
-        />
+        <link rel="stylesheet" href="styles.css" />
         <script defer src="script.js"></script>
     </head>
     <body>
-        <div class="cv-container">
-            <aside class="cv-sidebar">
-                <div class="sidebar-content">
-                    <div class="theme-toggle-wrapper">
-                        <button
-                            id="theme-toggle"
-                            class="theme-toggle"
-                            aria-label="Toggle dark mode"
-                            aria-pressed="false"
-                        >
-                            <i class="fas fa-sun sun"></i>
-                            <i class="fas fa-moon moon"></i>
-                        </button>
-                    </div>
-                    <div class="profile-section">
-                        <div class="profile-avatar">
-                            <img
-                                src="assets/spaghetti_monster.png"
-                                alt="Parth Bibekar"
-                            />
+        <div class="page">
+            <header class="site-header">
+                <a href="index.html" class="site-name">Parth Bibekar</a>
+                <nav class="site-nav">
+                    <a href="publications.html">Publications</a>
+                    <a href="blogs.html" aria-current="page">Blog</a>
+                    <a href="assets/CV.pdf" target="_blank">CV</a>
+                    <button
+                        id="theme-toggle"
+                        class="theme-toggle"
+                        aria-label="Toggle dark mode"
+                    >
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" />
+                        </svg>
+                    </button>
+                </nav>
+            </header>
+            <main>
+                <section>
+                    <h1 class="blog-title">Blog</h1>
+                    <p class="blog-meta">Occasional writing.</p>
+
+                    <div class="entry">
+                        <div class="entry-head">
+                            <h3>
+                                <a href="iiser-faq.html">A Guide to the Indian Institutes of Science Education and Research (IISERs)</a>
+                            </h3>
+                            <span class="entry-date">Jun 2025</span>
                         </div>
-                        <h1 class="profile-name">Parth Bibekar</h1>
-                        <p class="profile-title">
-                            PhD Candidate in Computational Biology
+                        <p>
+                            An FAQ-style guide for prospective students on
+                            course structure, campus life, research
+                            opportunities and career paths, based on my time
+                            at IISER Kolkata.
                         </p>
-                        <p class="profile-institution">EPFL, Switzerland</p>
-                    </div>
-                    <div class="sidebar-section">
-                        <a
-                            href="assets/CV.pdf"
-                            target="_blank"
-                            class="cv-download-btn"
-                            ><i class="fas fa-file-pdf"></i> Download CV</a
-                        >
-                    </div>
-                    <nav class="sidebar-nav">
-                        <a href="index.html" class="nav-link">Home</a>
-                        <a href="publications.html" class="nav-link"
-                            >Publications</a
-                        >
-                        <a href="blogs.html" class="nav-link">Blog</a>
-                    </nav>
-                    <div class="sidebar-section">
-                        <h3>Contact</h3>
-                        <ul class="sidebar-list">
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <a href="mailto:parth.bibekar@epfl.ch"
-                                    >parth.bibekar@epfl.ch</a
-                                >
-                            </li>
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i> Lausanne,
-                                Switzerland
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sidebar-section">
-                        <h3>Profiles</h3>
-                        <ul class="sidebar-list">
-                            <li>
-                                <a
-                                    href="https://scholar.google.com/citations?user=Sx6KhU4AAAAJ&hl=en"
-                                    target="_blank"
-                                    ><i class="fas fa-graduation-cap"></i>
-                                    Google Scholar</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="https://github.com/ParthBibekar"
-                                    target="_blank"
-                                    ><i class="fab fa-github"></i> GitHub</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.linkedin.com/in/parth-bibekar-a8a2a0247/"
-                                    target="_blank"
-                                    ><i class="fab fa-linkedin"></i> LinkedIn</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="https://x.com/BibekarParth"
-                                    target="_blank"
-                                    ><i class="fab fa-x-twitter"></i> Twitter</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="https://bsky.app/profile/parthbibekar.bsky.social"
-                                    target="_blank"
-                                    ><i class="fab fa-bluesky"></i> Bluesky</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </aside>
-            <main class="cv-main">
-                <section class="cv-section">
-                    <h2 class="section-title">Blog</h2>
-                    <div class="project-item">
-                        <h3>
-                            A Guide to Indian Institutes of Science Education
-                            and Research (IISERs)
-                        </h3>
-                        <p class="project-desc">
-                            A comprehensive FAQ-style guide covering everything
-                            prospective students need to know about IISERs —
-                            from course structures and campus life to research
-                            opportunities and career paths. Based on my personal
-                            experience as an IISER Kolkata graduate.
-                        </p>
-                        <div class="project-links">
-                            <a href="iiser-faq.html" class="project-link"
-                                ><i class="fas fa-book-open"></i> Read Blog</a
-                            >
-                        </div>
                     </div>
                 </section>
-                <footer class="cv-footer">
-                    <p>&copy; 2025 Parth Bibekar</p>
-                </footer>
             </main>
+            <footer class="site-footer">
+                © 2026 Parth Bibekar · Lausanne, Switzerland
+            </footer>
         </div>
     </body>
 </html>

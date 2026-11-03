@@ -4,587 +4,260 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Parth Bibekar</title>
-        <link rel="stylesheet" href="styles.css" />
+        <meta name="description" content="PhD candidate at EPFL working on machine learning for RNA and protein structure." />
+        <link rel="icon" href="assets/spaghetti_monster.png" />
+        <script>
+            try {
+                var t = localStorage.getItem("theme");
+                if (t) document.documentElement.dataset.theme = t;
+            } catch (e) {}
+        </script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
             rel="stylesheet"
         />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
         />
+        <link rel="stylesheet" href="styles.css" />
         <script defer src="script.js"></script>
     </head>
     <body>
-        <div class="cv-container">
-            <!-- Sidebar -->
-            <aside class="cv-sidebar">
-                <div class="sidebar-content">
-                    <!-- Theme Toggle -->
-                    <div class="theme-toggle-wrapper">
-                        <button
-                            id="theme-toggle"
-                            class="theme-toggle"
-                            aria-label="Toggle dark mode"
-                            aria-pressed="false"
-                        >
-                            <i class="fas fa-sun sun"></i>
-                            <i class="fas fa-moon moon"></i>
-                        </button>
-                    </div>
-
-                    <!-- Profile -->
-                    <div class="profile-section">
-                        <div class="profile-avatar">
-                            <img
-                                src="assets/spaghetti_monster.png"
-                                alt="Parth Bibekar"
-                            />
+        <div class="page">
+            <header class="site-header">
+                <a href="index.html" class="site-name">Parth Bibekar</a>
+                <nav class="site-nav">
+                    <a href="publications.html">Publications</a>
+                    <a href="blogs.html">Blog</a>
+                    <a href="assets/CV.pdf" target="_blank">CV</a>
+                    <button
+                        id="theme-toggle"
+                        class="theme-toggle"
+                        aria-label="Toggle dark mode"
+                    >
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" />
+                        </svg>
+                    </button>
+                </nav>
+            </header>
+            <main>
+                <section>
+                    <div class="intro">
+                        <img
+                            class="avatar"
+                            src="assets/spaghetti_monster.png"
+                            alt="Parth Bibekar"
+                        />
+                        <div>
+                            <h1>Parth Bibekar</h1>
+                            <p>PhD candidate at EPFL, Switzerland</p>
                         </div>
-                        <h1 class="profile-name">Parth Bibekar</h1>
-                        <p class="profile-title">
-                            PhD Candidate in Computational & Quantitative
-                            Biology
-                        </p>
-                        <p class="profile-institution">EPFL, Switzerland</p>
                     </div>
-
-                    <!-- CV Download -->
-                    <div class="sidebar-section">
-                        <a
-                            href="assets/CV.pdf"
-                            target="_blank"
-                            class="cv-download-btn"
-                            ><i class="fas fa-file-pdf"></i> Download CV</a
-                        >
-                    </div>
-
-                    <!-- Navigation -->
-                    <nav class="sidebar-nav">
-                        <a href="index.html" class="nav-link">Home</a>
-                        <a href="publications.html" class="nav-link"
-                            >Publications</a
-                        >
-                        <a href="blogs.html" class="nav-link">Blog</a>
-                    </nav>
-
-                    <!-- Contact -->
-                    <div class="sidebar-section">
-                        <h3>Contact</h3>
-                        <ul class="sidebar-list">
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <a href="mailto:parth.bibekar@epfl.ch"
-                                    >parth.bibekar@epfl.ch</a
-                                >
-                            </li>
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i> Lausanne,
-                                Switzerland
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Profiles -->
-                    <div class="sidebar-section">
-                        <h3>Profiles</h3>
-                        <ul class="sidebar-list">
-                            <li>
-                                <a
-                                    href="https://scholar.google.com/citations?user=Sx6KhU4AAAAJ&hl=en"
-                                    target="_blank"
-                                    ><i class="fas fa-graduation-cap"></i>
-                                    Google Scholar</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="https://github.com/ParthBibekar"
-                                    target="_blank"
-                                    ><i class="fab fa-github"></i> GitHub</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.linkedin.com/in/parth-bibekar-a8a2a0247/"
-                                    target="_blank"
-                                    ><i class="fab fa-linkedin"></i> LinkedIn</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="https://x.com/BibekarParth"
-                                    target="_blank"
-                                    ><i class="fab fa-x-twitter"></i> Twitter</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="https://bsky.app/profile/parthbibekar.bsky.social"
-                                    target="_blank"
-                                    ><i class="fab fa-bluesky"></i> Bluesky</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </aside>
-
-            <!-- Main Content -->
-            <main class="cv-main">
-                <!-- About -->
-                <section class="cv-section">
-                    <h2 class="section-title">About</h2>
-                    <p>
-                        I am a PhD candidate at the
-                        <a
-                            href="https://www.epfl.ch/labs/lbm/"
-                            target="_blank"
-                            class="custom-link"
+                    <p class="bio">
+                        I am a PhD candidate in Computational and Quantitative
+                        Biology at the
+                        <a href="https://www.epfl.ch/labs/lbm/" target="_blank"
                             >Laboratory for Biomolecular Modeling</a
-                        >
-                        at EPFL. My research interests include applications of
-                        machine learning in structural bioinformatics,
-                        computational biophysics and integrative modeling. I
-                        enjoy playing chess, traveling, reading, and building
-                        things.
+                        >, EPFL, advised by
+                        <a
+                            href="https://people.epfl.ch/matteo.dalperaro"
+                            target="_blank"
+                            >Prof. Matteo Dal Peraro</a
+                        >. I work on machine learning for structural
+                        bioinformatics, computational biophysics and
+                        integrative modeling, and lately on designing RNA. Outside
+                        research I
+                        enjoy chess, close-up magic, traveling, reading, and
+                        building things.
                     </p>
+                    <ul class="links">
+                        <li><a class="primary" href="mailto:parth.bibekar@epfl.ch" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a></li>
+                        <li><a href="https://scholar.google.com/citations?user=Sx6KhU4AAAAJ&hl=en" target="_blank" aria-label="Google Scholar" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a></li>
+                        <li><a href="https://github.com/ParthBibekar" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/parth-bibekar-a8a2a0247/" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://bsky.app/profile/parthbibekar.bsky.social" target="_blank" aria-label="Bluesky" title="Bluesky"><i class="fab fa-bluesky"></i></a></li>
+                        <li><a href="https://x.com/BibekarParth" target="_blank" aria-label="X" title="X"><i class="fab fa-x-twitter"></i></a></li>
+                    </ul>
                 </section>
 
-                <!-- Education -->
-                <section id="education" class="cv-section">
-                    <h2 class="section-title">Education</h2>
+                <section>
+                    <h2>Research</h2>
 
-                    <div class="education-item">
-                        <div class="education-header">
-                            <div class="education-meta">
-                                <div class="education-logo">
-                                    <img
-                                        src="assets/epfl-logo-new.svg"
-                                        alt="EPFL"
-                                    />
-                                </div>
-                                <div class="education-info">
-                                    <h3>
-                                        PhD in Computational and Quantitative
-                                        Biology
-                                    </h3>
-                                    <p class="education-institution">
-                                        <a
-                                            href="https://www.epfl.ch/"
-                                            target="_blank"
-                                            >EPFL</a
-                                        >, Switzerland
-                                    </p>
-                                </div>
-                            </div>
-                            <span class="education-date">2024 – Present</span>
-                        </div>
-                        <p class="education-detail">
-                            <strong>Advisor:</strong>
-                            <a
-                                href="https://people.epfl.ch/matteo.dalperaro"
-                                target="_blank"
-                                class="custom-link"
-                                >Prof. Matteo Dal Peraro</a
-                            >
-                        </p>
-                    </div>
-
-                    <div class="education-item">
-                        <div class="education-header">
-                            <div class="education-meta">
-                                <div class="education-logo">
-                                    <img
-                                        src="assets/iiserkol-logo.png"
-                                        alt="IISER Kolkata"
-                                    />
-                                </div>
-                                <div class="education-info">
-                                    <h3>
-                                        BS-MS in Biology (Minor in Computational
-                                        and Data Sciences)
-                                    </h3>
-                                    <p class="education-institution">
-                                        <a
-                                            href="https://www.iiserkol.ac.in/"
-                                            target="_blank"
-                                            >IISER Kolkata</a
-                                        >, India
-                                    </p>
-                                </div>
-                            </div>
-                            <span class="education-date">2019 – 2024</span>
-                        </div>
-                        <p class="education-detail">
-                            <strong>MS Thesis:</strong> Applications of
-                            Geometric Deep Learning for Biomolecular Structure
-                            Modeling
-                        </p>
-                        <p class="education-detail">
-                            <strong>Advisor:</strong>
-                            <a
-                                href="https://people.epfl.ch/matteo.dalperaro"
-                                target="_blank"
-                                class="custom-link"
-                                >Prof. Matteo Dal Peraro</a
-                            >
-                        </p>
-                    </div>
-                </section>
-
-                <!-- Projects -->
-                <section id="projects" class="cv-section">
-                    <h2 class="section-title">Projects</h2>
-
-                    <div class="project-item">
-                        <h3>RISoTTo</h3>
-                        <p class="project-desc">
+                    <div class="entry">
+                        <h3>RISoTTo: context-aware RNA sequence design</h3>
+                        <p>
                             A parameter-free geometric deep learning approach
                             that generates RNA sequences conditioned on both
                             their backbone scaffolds and the surrounding
-                            molecular context. Presented at NeurIPS AI4D3
-                            workshop 2025.
+                            molecular context. Presented at the NeurIPS 2025
+                            AI4D3 workshop.
                         </p>
-                        <div class="project-links">
-                            <a
-                                href="https://github.com/LBM-EPFL/RISoTTo"
-                                target="_blank"
-                                class="project-link"
-                                ><i class="fab fa-github"></i> Code</a
-                            >
-                            <a
-                                href="https://doi.org/10.1101/2025.06.21.660801"
-                                target="_blank"
-                                class="project-link"
-                                >Paper</a
-                            >
+                        <div class="entry-links">
+                            <a href="https://doi.org/10.1101/2025.06.21.660801" target="_blank">Paper</a>
+                            <a href="https://github.com/LBM-EPFL/RISoTTo" target="_blank">Code</a>
+                        </div>
+                        <img
+                            class="figure"
+                            src="assets/risotto_summary.png"
+                            alt="RISoTTo method overview"
+                            loading="lazy"
+                        />
+                    </div>
+
+                    <div class="entry">
+                        <h3>PeSTo-Carbs: protein–carbohydrate interfaces</h3>
+                        <p>
+                            A geometric transformer extending PeSTo to predict
+                            binding interfaces between proteins and
+                            carbohydrates, including cyclodextrins. Featured on
+                            the cover of JCTC.
+                        </p>
+                        <div class="entry-links">
+                            <a href="https://doi.org/10.1021/acs.jctc.3c01145" target="_blank">Paper</a>
+                            <a href="https://github.com/LBM-EPFL/PeSTo-Carbs" target="_blank">Code</a>
+                            <a href="https://pesto.epfl.ch/" target="_blank">Web server</a>
+                        </div>
+                        <img
+                            class="figure"
+                            src="assets/pesto_carbs_summary.png"
+                            alt="PeSTo-Carbs method overview"
+                            loading="lazy"
+                        />
+                    </div>
+
+                    <p class="muted" style="margin-top: 24px">
+                        Full list on the
+                        <a href="publications.html">publications page</a>.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Talks &amp; Posters</h2>
+                    <ul class="talks">
+                        <li><span class="entry-date">Mar 2026</span><span>Physics of Living Systems Seminar<span class="where">EPFL, Switzerland</span></span><span class="tag">Talk</span></li>
+                        <li><span class="entry-date">Jan 2026</span><span>EPFL AIxBIO Seminar<span class="where">EPFL, Switzerland</span></span><span class="tag">Talk</span></li>
+                        <li><span class="entry-date">Jan 2026</span><span>Swiss RNA Workshop<span class="where">Bern, Switzerland</span></span><span class="tag">Poster</span></li>
+                        <li><span class="entry-date">Jan 2026</span><span>frontiers2026 Symposium on NanoBioEngineering<span class="where">EPFL, Switzerland</span></span><span class="tag">Talk</span></li>
+                        <li><span class="entry-date">Jan 2026</span><span>SIB AI4Biomolecules SIG Seminar<span class="where">Bern, Switzerland</span></span><span class="tag">Talk</span></li>
+                        <li><span class="entry-date">Dec 2025</span><span>NeurIPS AI4D3 Workshop<span class="where">San Diego, USA</span></span><span class="tag">Poster</span></li>
+                        <li><span class="entry-date">Oct 2025</span><span>European RosettaCon<span class="where">Ljubljana, Slovenia</span></span><span class="tag">Poster</span></li>
+                        <li><span class="entry-date">Oct 2025</span><span>Structure Based Drug Discovery<span class="where">Sestri Levante, Italy</span></span><span class="tag">Poster</span></li>
+                        <li><span class="entry-date">Nov 2024</span><span>European RosettaCon<span class="where">Copenhagen, Denmark</span></span><span class="tag">Poster</span></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Education</h2>
+
+                    <div class="entry edu">
+                        <img class="edu-logo" src="assets/epfl-logo-new.svg" alt="EPFL" />
+                        <div>
+                            <div class="entry-head">
+                                <h3>PhD, Computational and Quantitative Biology</h3>
+                                <span class="entry-date">2024 – now</span>
+                            </div>
+                            <p>
+                                <a href="https://www.epfl.ch/" target="_blank">EPFL</a>, Switzerland
+                            </p>
+                            <p>
+                                Advisor:
+                                <a href="https://people.epfl.ch/matteo.dalperaro" target="_blank">Prof. Matteo Dal Peraro</a>
+                            </p>
                         </div>
                     </div>
 
-                    <div class="project-item">
-                        <h3>PeSTo-Carbs</h3>
-                        <p class="project-desc">
-                            A geometric transformer model extending PeSTo to
-                            predict binding interfaces between proteins and
-                            carbohydrates, including protein–cyclodextrin
-                            interactions, with high accuracy. Featured as
-                            Journal Cover.
-                        </p>
-                        <div class="project-links">
-                            <a
-                                href="https://github.com/LBM-EPFL/PeSTo-Carbs"
-                                target="_blank"
-                                class="project-link"
-                                ><i class="fab fa-github"></i> Code</a
-                            >
-                            <a
-                                href="https://doi.org/10.1021/acs.jctc.3c01145"
-                                target="_blank"
-                                class="project-link"
-                                >Paper</a
-                            >
-                            <a
-                                href="https://pesto.epfl.ch/"
-                                target="_blank"
-                                class="project-link"
-                                >Web Server</a
-                            >
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <h3>Welearn-bot</h3>
-                        <p class="project-desc">
-                            A CLI application to interact with welearn in the
-                            IISER Kolkata domain. Supports file downloads,
-                            assignment listing, and Google Calendar integration.
-                        </p>
-                        <div class="project-links">
-                            <a
-                                href="https://github.com/ParthBibekar/Welearn-bot"
-                                target="_blank"
-                                class="project-link"
-                                ><i class="fab fa-github"></i> Code</a
-                            >
+                    <div class="entry edu">
+                        <img class="edu-logo" src="assets/iiserkol-logo.png" alt="IISER Kolkata" />
+                        <div>
+                            <div class="entry-head">
+                                <h3>BS-MS, Biology (minor in Computational and Data Sciences)</h3>
+                                <span class="entry-date">2019 – 2024</span>
+                            </div>
+                            <p>
+                                <a href="https://www.iiserkol.ac.in/" target="_blank">IISER Kolkata</a>, India
+                            </p>
+                            <p>
+                                Thesis: <em>Applications of Geometric Deep
+                                Learning for Biomolecular Structure Modeling</em>
+                            </p>
+                            <p>
+                                Advisor:
+                                <a href="https://people.epfl.ch/matteo.dalperaro" target="_blank">Prof. Matteo Dal Peraro</a>
+                            </p>
                         </div>
                     </div>
                 </section>
 
-                <!-- Teaching -->
-                <section id="teaching" class="cv-section">
-                    <h2 class="section-title">Teaching</h2>
+                <section>
+                    <h2>Teaching</h2>
 
-                    <div class="teaching-item">
-                        <div class="teaching-header">
-                            <div class="teaching-info">
-                                <h3>Teaching Assistant — EPFL Team iGEM</h3>
-                                <p class="teaching-institution">
-                                    EPFL, Switzerland
-                                </p>
-                            </div>
-                            <span class="teaching-date">2026</span>
+                    <div class="entry">
+                        <div class="entry-head">
+                            <h3>EPFL iGEM Team</h3>
+                            <span class="entry-date">2026</span>
                         </div>
-                        <p class="teaching-detail">
-                            Supervised students for the computational and
-                            mathematical modeling aspects of a synthetic biology
-                            project.
+                        <p>
+                            Supervised the computational and mathematical
+                            modeling of a synthetic biology project.
                         </p>
                     </div>
 
-                    <div class="teaching-item">
-                        <div class="teaching-header">
-                            <div class="teaching-info">
-                                <h3>
-                                    Teaching Assistant — BIOENG-455:
-                                    Computational Cell Biology
-                                </h3>
-                                <p class="teaching-institution">
-                                    EPFL, Switzerland
-                                </p>
-                            </div>
-                            <span class="teaching-date">2025</span>
+                    <div class="entry">
+                        <div class="entry-head">
+                            <h3>BIOENG-455 · Computational Cell Biology</h3>
+                            <span class="entry-date">2025</span>
                         </div>
-                        <p class="teaching-detail">
-                            Supervised students for various aspects of the
-                            course.
-                        </p>
+                        <p>Teaching assistant.</p>
                     </div>
 
-                    <div class="teaching-item">
-                        <div class="teaching-header">
-                            <div class="teaching-info">
-                                <h3>
-                                    Teaching Assistant — BIO-315: Structural
-                                    Biology
-                                </h3>
-                                <p class="teaching-institution">
-                                    EPFL, Switzerland
-                                </p>
-                            </div>
-                            <span class="teaching-date">2024, 2026</span>
+                    <div class="entry">
+                        <div class="entry-head">
+                            <h3>BIO-315 · Structural Biology</h3>
+                            <span class="entry-date">2024, 2026</span>
                         </div>
-                        <p class="teaching-detail">
-                            Supervised students for modules: Molecular Dynamics,
-                            Molecular Modeling, and CryoEM analysis.
+                        <p>
+                            Teaching assistant for the molecular dynamics,
+                            molecular modeling, and cryo-EM modules.
                         </p>
                     </div>
                 </section>
 
-                <!-- Talks -->
-                <section id="talks" class="cv-section">
-                    <h2 class="section-title">Talks &amp; Conferences</h2>
-
-                    <div class="talk-list">
-                        <div class="talk-item">
-                            <span class="talk-date">Mar 2026</span>
-                            <div class="talk-body">
-                                <p class="talk-title">
-                                    Physics of Living Systems Seminar
-                                </p>
-                                <div class="talk-meta">
-                                    <span class="talk-type talk">Talk</span>
-                                    <span class="talk-location"
-                                        >EPFL, Switzerland</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="talk-item">
-                            <span class="talk-date">Jan 2026</span>
-                            <div class="talk-body">
-                                <p class="talk-title">EPFL AIxBIO Seminar</p>
-                                <div class="talk-meta">
-                                    <span class="talk-type talk">Talk</span>
-                                    <span class="talk-location"
-                                        >EPFL, Switzerland</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="talk-item">
-                            <span class="talk-date">Jan 2026</span>
-                            <div class="talk-body">
-                                <p class="talk-title">Swiss RNA Workshop</p>
-                                <div class="talk-meta">
-                                    <span class="talk-type poster">Poster</span>
-                                    <span class="talk-location"
-                                        >Bern, Switzerland</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="talk-item">
-                            <span class="talk-date">Jan 2026</span>
-                            <div class="talk-body">
-                                <p class="talk-title">
-                                    frontiers2026 Symposium on
-                                    NanoBioEngineering
-                                </p>
-                                <div class="talk-meta">
-                                    <span class="talk-type talk">Talk</span>
-                                    <span class="talk-location"
-                                        >EPFL, Switzerland</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="talk-item">
-                            <span class="talk-date">Jan 2026</span>
-                            <div class="talk-body">
-                                <p class="talk-title">
-                                    SIB AI4Biomolecules SIG Seminar
-                                </p>
-                                <div class="talk-meta">
-                                    <span class="talk-type talk">Talk</span>
-                                    <span class="talk-location"
-                                        >Bern, Switzerland</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="talk-item">
-                            <span class="talk-date">Dec 2025</span>
-                            <div class="talk-body">
-                                <p class="talk-title">NeurIPS AI4D3 Workshop</p>
-                                <div class="talk-meta">
-                                    <span class="talk-type poster">Poster</span>
-                                    <span class="talk-location"
-                                        >San Diego, USA</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="talk-item">
-                            <span class="talk-date">Oct 2025</span>
-                            <div class="talk-body">
-                                <p class="talk-title">European RosettaCon</p>
-                                <div class="talk-meta">
-                                    <span class="talk-type poster">Poster</span>
-                                    <span class="talk-location"
-                                        >Ljubljana, Slovenia</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="talk-item">
-                            <span class="talk-date">Oct 2025</span>
-                            <div class="talk-body">
-                                <p class="talk-title">
-                                    Structure Based Drug Discovery
-                                </p>
-                                <div class="talk-meta">
-                                    <span class="talk-type poster">Poster</span>
-                                    <span class="talk-location"
-                                        >Sestri Levante, Italy</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="talk-item">
-                            <span class="talk-date">Nov 2024</span>
-                            <div class="talk-body">
-                                <p class="talk-title">European RosettaCon</p>
-                                <div class="talk-meta">
-                                    <span class="talk-type poster">Poster</span>
-                                    <span class="talk-location"
-                                        >Copenhagen, Denmark</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Campus & Contact -->
-                <section class="campus-contact-section">
-                    <div class="campus-image-wrapper">
+                <section class="connect">
+                    <figure class="campus">
                         <img
                             src="assets/EPFL_campus_2017.jpg"
-                            alt="EPFL Campus overlooking Lake Geneva"
-                            class="campus-image"
+                            alt="EPFL campus overlooking Lake Geneva"
+                            loading="lazy"
                         />
-                        <p class="campus-caption">
-                            The beautiful EPFL campus overlooking Lac Léman
+                        <figcaption>
+                            The EPFL campus, overlooking Lac Léman
+                        </figcaption>
+                    </figure>
+                    <div class="connect-card">
+                        <h2>Let's connect</h2>
+                        <p>
+                            Always open to collaborating on interesting
+                            problems in RNA and protein design, computational
+                            biology, and structural bioinformatics.
                         </p>
-                    </div>
-                    <div class="contact-card">
-                        <h3 class="contact-card-title">Let's Connect</h3>
-                        <p class="contact-card-intro">
-                            Always open to collaborate on interesting problems
-                            in RNA/protein design, computational biology, and
-                            structural bioinformatics.
-                        </p>
-                        <a
-                            href="mailto:parth.bibekar@epfl.ch"
-                            class="contact-card-email"
-                        >
-                            <i class="fas fa-envelope"></i>
-                            parth.bibekar@epfl.ch
-                        </a>
-                        <div class="contact-card-socials">
-                            <a
-                                href="https://github.com/ParthBibekar"
-                                target="_blank"
-                                class="contact-social-link"
-                                aria-label="GitHub"
-                            >
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/in/parth-bibekar-a8a2a0247/"
-                                target="_blank"
-                                class="contact-social-link"
-                                aria-label="LinkedIn"
-                            >
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a
-                                href="https://scholar.google.com/citations?user=Sx6KhU4AAAAJ&hl=en"
-                                target="_blank"
-                                class="contact-social-link"
-                                aria-label="Google Scholar"
-                            >
-                                <i class="fas fa-graduation-cap"></i>
-                            </a>
-                            <a
-                                href="https://x.com/BibekarParth"
-                                target="_blank"
-                                class="contact-social-link"
-                                aria-label="Twitter"
-                            >
-                                <i class="fab fa-x-twitter"></i>
-                            </a>
-                            <a
-                                href="https://bsky.app/profile/parthbibekar.bsky.social"
-                                target="_blank"
-                                class="contact-social-link"
-                                aria-label="Bluesky"
-                            >
-                                <i class="fab fa-bluesky"></i>
-                            </a>
+                        <a class="connect-email" href="mailto:parth.bibekar@epfl.ch">parth.bibekar@epfl.ch</a>
+                        <div class="entry-links">
+                            <a href="https://scholar.google.com/citations?user=Sx6KhU4AAAAJ&hl=en" target="_blank">Google Scholar</a>
+                            <a href="https://github.com/ParthBibekar" target="_blank">GitHub</a>
+                            <a href="https://www.linkedin.com/in/parth-bibekar-a8a2a0247/" target="_blank">LinkedIn</a>
+                            <a href="https://bsky.app/profile/parthbibekar.bsky.social" target="_blank">Bluesky</a>
+                            <a href="https://x.com/BibekarParth" target="_blank">X</a>
                         </div>
                     </div>
                 </section>
-
-                <footer class="cv-footer">
-                    <p>
-                        Made with <i class="fas fa-heart"></i> by Parth Bibekar
-                        in
-                        <span class="flags">🇨🇭 🇮🇳</span>
-                    </p>
-                </footer>
             </main>
+            <footer class="site-footer">
+                © 2026 Parth Bibekar · Lausanne, Switzerland
+            </footer>
         </div>
     </body>
 </html>

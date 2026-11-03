@@ -3,126 +3,44 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>IISERs FAQ | Parth Bibekar</title>
-        <link rel="stylesheet" href="styles.css" />
+        <title>A Guide to the IISERs · Parth Bibekar</title>
+        <meta name="description" content="An FAQ-style guide to the IISERs for prospective students." />
+        <link rel="icon" href="assets/spaghetti_monster.png" />
+        <script>
+            try {
+                var t = localStorage.getItem("theme");
+                if (t) document.documentElement.dataset.theme = t;
+            } catch (e) {}
+        </script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
             rel="stylesheet"
         />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Georgia&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
-        />
+        <link rel="stylesheet" href="styles.css" />
         <script defer src="script.js"></script>
     </head>
     <body>
-        <div class="cv-container">
-            <aside class="cv-sidebar">
-                <div class="sidebar-content">
-                    <div class="theme-toggle-wrapper">
-                        <button
-                            id="theme-toggle"
-                            class="theme-toggle"
-                            aria-label="Toggle dark mode"
-                            aria-pressed="false"
-                        >
-                            <i class="fas fa-sun sun"></i>
-                            <i class="fas fa-moon moon"></i>
-                        </button>
-                    </div>
-                    <div class="profile-section">
-                        <div class="profile-avatar">
-                            <img
-                                src="assets/spaghetti_monster.png"
-                                alt="Parth Bibekar"
-                            />
-                        </div>
-                        <h1 class="profile-name">Parth Bibekar</h1>
-                        <p class="profile-title">
-                            PhD Candidate in Computational Biology
-                        </p>
-                        <p class="profile-institution">EPFL, Switzerland</p>
-                    </div>
-                    <div class="sidebar-section">
-                        <a
-                            href="assets/CV.pdf"
-                            target="_blank"
-                            class="cv-download-btn"
-                            ><i class="fas fa-file-pdf"></i> Download CV</a
-                        >
-                    </div>
-                    <nav class="sidebar-nav">
-                        <a href="index.html" class="nav-link">Home</a>
-                        <a href="publications.html" class="nav-link"
-                            >Publications</a
-                        >
-                        <a href="blogs.html" class="nav-link">Blog</a>
-                    </nav>
-                    <div class="sidebar-section">
-                        <h3>Contact</h3>
-                        <ul class="sidebar-list">
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <a href="mailto:parth.bibekar@epfl.ch"
-                                    >parth.bibekar@epfl.ch</a
-                                >
-                            </li>
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i> Lausanne,
-                                Switzerland
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sidebar-section">
-                        <h3>Profiles</h3>
-                        <ul class="sidebar-list">
-                            <li>
-                                <a
-                                    href="https://scholar.google.com/citations?user=Sx6KhU4AAAAJ&hl=en"
-                                    target="_blank"
-                                    ><i class="fas fa-graduation-cap"></i>
-                                    Google Scholar</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="https://github.com/ParthBibekar"
-                                    target="_blank"
-                                    ><i class="fab fa-github"></i> GitHub</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.linkedin.com/in/parth-bibekar-a8a2a0247/"
-                                    target="_blank"
-                                    ><i class="fab fa-linkedin"></i> LinkedIn</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="https://x.com/BibekarParth"
-                                    target="_blank"
-                                    ><i class="fab fa-x-twitter"></i> Twitter</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="https://bsky.app/profile/parthbibekar.bsky.social"
-                                    target="_blank"
-                                    ><i class="fab fa-bluesky"></i> Bluesky</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </aside>
-            <main class="cv-main">
+        <div class="page">
+            <header class="site-header">
+                <a href="index.html" class="site-name">Parth Bibekar</a>
+                <nav class="site-nav">
+                    <a href="publications.html">Publications</a>
+                    <a href="blogs.html" aria-current="page">Blog</a>
+                    <a href="assets/CV.pdf" target="_blank">CV</a>
+                    <button
+                        id="theme-toggle"
+                        class="theme-toggle"
+                        aria-label="Toggle dark mode"
+                    >
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" />
+                        </svg>
+                    </button>
+                </nav>
+            </header>
+            <main>
                 <article class="blog-post">
                     <h1 class="blog-title">
                         A Guide to Indian Institutes of Science Education and
@@ -138,7 +56,7 @@
                             As a PhD student, my life often swings between
                             intense work phases and spontaneous breaks born out
                             of sheer exhaustion. It's a rhythm I've come to
-                            accept—bursts of productivity followed by
+                            accept: bursts of productivity followed by
                             much-needed downtime. During one such recent break,
                             I found myself scrolling through
                             <a
@@ -157,7 +75,7 @@
                             Reading through the posts made me realize something:
                             while there's a lot of curiosity around the IISERs,
                             there's still a noticeable gap in easily accessible
-                            and consolidated information. So I thought—why not
+                            and consolidated information. So I thought, why not
                             write something myself?
                         </p>
 
@@ -167,7 +85,7 @@
                             Whether you're a high school student contemplating
                             your future, a parent trying to understand these
                             institutions, or just someone curious about
-                            interdisciplinary science in India—I hope this
+                            interdisciplinary science in India, I hope this
                             helps.
                         </p>
 
@@ -181,16 +99,16 @@
                             and Data Sciences. My PhD work lies broadly in the
                             field of molecular bioengineering, with a specific
                             focus on engineering RNA using a mix of
-                            computational approaches—ranging from machine
+                            computational approaches, ranging from machine
                             learning to physics-based simulations like molecular
                             dynamics. It's a blend of biology, chemistry,
-                            physics, and computer science—all disciplines that
+                            physics, and computer science, all disciplines that
                             the IISERs aim to integrate and nurture.
                         </p>
 
                         <p>
                             When I first joined IISER Kolkata back in 2019, I
-                            was filled with excitement—but also burdened with
+                            was filled with excitement, but also burdened with
                             questions, misconceptions, and uncertainties. One of
                             the most helpful resources I came across was a blog
                             called
@@ -220,7 +138,7 @@
                                 taught."</em
                             >
                             <span class="quote-attribution"
-                                >— N Kumar, First Chairman, Board of Governors,
+                                >N Kumar, First Chairman, Board of Governors,
                                 IISER Pune (16 August 2006)</span
                             >
                         </p>
@@ -403,7 +321,7 @@
                             ranks for IITs or cutoffs for NITs, IISERs don't
                             follow a strict hierarchy. You'll often hear debates
                             like "Is Pune better than Kolkata?" or "Should I
-                            avoid Tirupati?" — and while some of this is rooted
+                            avoid Tirupati?" And while some of this is rooted
                             in experience, most of it is
                             <strong>subjective and nuanced</strong>.
                         </p>
@@ -429,9 +347,9 @@
                             <li>More alumni and networks</li>
                         </ul>
                         <p>
-                            But that doesn't mean the newer IISERs —
+                            But that doesn't mean the newer IISERs (
                             <strong>Tirupati</strong> and
-                            <strong>Berhampur</strong> — are "bad." Far from it.
+                            <strong>Berhampur</strong>) are "bad." Far from it.
                             Many of them are <strong>growing rapidly</strong>,
                             and being in a newer institute can give you
                             <strong
@@ -464,7 +382,7 @@
                             This is a <strong>flawed metric</strong>.<br />
                             It doesn't measure teaching quality or your
                             classroom experience. It mostly reflects the
-                            <strong>research output</strong> of departments —
+                            <strong>research output</strong> of departments,
                             and indirectly, their <strong>size</strong>.
                         </div>
 
@@ -574,7 +492,7 @@
                             style="margin: 20px 0; opacity: 0.4"
                         />
 
-                        <h4>TLDR — How to Decide?</h4>
+                        <h4>TLDR: How to Decide?</h4>
 
                         <ul class="blog-list">
                             <li>
@@ -602,7 +520,7 @@
                                 own effort and curiosity than the IISER you
                                 attend.</strong
                             >
-                            I've seen incredible students from every IISER —
+                            I've seen incredible students from every IISER:
                             it's what <em>you</em> make of it that matters most.
                         </p>
 
@@ -679,7 +597,7 @@
                                 typically dedicated to a
                                 <strong>Master's thesis</strong>, where you
                                 carry out a year-long research project in a lab
-                                or research group—often with the flexibility to
+                                or research group, often with the flexibility to
                                 do it outside your home IISER or even abroad.
                             </li>
                         </ul>
@@ -730,7 +648,7 @@
                             The way science is taught in +2 (Class 11–12) is
                             very different from how you'll experience it at
                             IISERs. Once you start taking real university-level
-                            courses, your interests may shift—and that's
+                            courses, your interests may shift, and that's
                             perfectly normal.
                         </p>
                         <p>
@@ -739,7 +657,7 @@
                             with <strong>ecology</strong>,
                             <strong>geology</strong>, or even
                             <strong>computational biology</strong>. These are
-                            not fallback options—they're just
+                            not fallback options; they're just
                             <strong>equally rich, exciting areas</strong> that
                             people discover along the way.
                         </p>
@@ -792,19 +710,19 @@
                             academically packed. There's a fixed common
                             curriculum, lots of coursework, and adjusting to the
                             new system takes time. But as you move forward,
-                            things start becoming more flexible—<strong
+                            things start becoming more flexible, <strong
                                 >both in terms of academics and time
                                 management</strong
                             >. For example, by the 4th year, I was mostly
                             focused on research. For some courses, I didn't even
-                            attend lectures—I spent my time learning specific
+                            attend lectures; I spent my time learning specific
                             skills and working in a lab instead.
                         </p>
                         <p>
                             One thing to know is that
                             <strong>you'll be as busy as you want to be</strong
                             >. There's no fixed formula. You can have loads of
-                            free time or be swamped all the time—it depends on
+                            free time or be swamped all the time; it depends on
                             how many activities, clubs, or research
                             opportunities you choose to take on.
                         </p>
@@ -829,14 +747,14 @@
                             </li>
                             <li>
                                 You'll also meet some brilliant, passionate
-                                people—some who study all the time, others who
+                                people: some who study all the time, others who
                                 organize festivals, and some who do both!
                             </li>
                         </ul>
                         <p>
                             Everyone's IISER journey is different. The system
                             gives you enough freedom to
-                            <strong>craft your own experience</strong>—whether
+                            <strong>craft your own experience</strong>, whether
                             that means diving deep into research, playing
                             badminton every evening, starting a campus club, or
                             all of the above.
@@ -851,7 +769,7 @@
                         <p>
                             Campus and hostel life at IISERs can vary from one
                             institute to another, but some core themes remain
-                            the same—vibrant student communities, a wide range
+                            the same: vibrant student communities, a wide range
                             of clubs, and many opportunities to explore
                             interests outside the classroom.
                         </p>
@@ -938,8 +856,8 @@
                         </p>
                         <p>
                             Many of these clubs also participate in the Inter
-                            IISER Cultural Meet (IICM) — the cultural equivalent
-                            of IISM — where students from all IISERs showcase
+                            IISER Cultural Meet (IICM), the cultural equivalent
+                            of IISM, where students from all IISERs showcase
                             talents in music, theatre, debate, dance, and other
                             performing arts. IICM is another opportunity for
                             travel, collaboration, and friendly competition
@@ -1006,7 +924,7 @@
                         <p>
                             While the hostels aren't luxurious, they're
                             comfortable enough and become the backdrop for some
-                            of your most memorable experiences—whether that's
+                            of your most memorable experiences, whether that's
                             late-night study sessions, corridor cricket, or
                             spontaneous philosophical discussions over chai.
                         </p>
@@ -1016,7 +934,7 @@
                         <h3>FAQ #9: What about summer internships?</h3>
                         <p>
                             Before we begin, if you're an <em>aspirant</em> who
-                            hasn't joined IISER yet — take a deep breath and
+                            hasn't joined IISER yet, take a deep breath and
                             <strong>hold your horses</strong>. You really don't
                             need to worry about internships just yet. Focus on
                             getting in first, and you'll figure the rest out
@@ -1077,7 +995,7 @@
                         <p>
                             While these programs tend to favor more senior
                             students, it's <strong>not uncommon</strong> for
-                            first- or second-year students to get selected — so
+                            first- or second-year students to get selected, so
                             it's definitely worth a shot.
                         </p>
 
@@ -1110,11 +1028,11 @@
                         <p>
                             This strategy works not only in India but
                             <strong>anywhere in the world</strong>. Email profs
-                            at top institutes abroad — not for the "abroad" tag,
+                            at top institutes abroad, not for the "abroad" tag,
                             but because you find their science fascinating. A
                             foreign internship
                             <strong>isn't automatically more valuable</strong>
-                            than one in India — what matters most is your
+                            than one in India; what matters most is your
                             curiosity and what you learn.
                         </p>
 
@@ -1126,7 +1044,7 @@
                         <h4>
                             Can internships lead to long-term opportunities?
                         </h4>
-                        <p>Yes — absolutely. Here are two personal examples:</p>
+                        <p>Yes, absolutely. Here are two personal examples:</p>
                         <ul class="blog-list">
                             <li>
                                 After my second year, I interned with
@@ -1146,12 +1064,12 @@
                                 <strong>ThinkSwiss Research Scholarship</strong
                                 >, and I got to work at EPFL for a summer. I
                                 liked it so much that I went back for my
-                                master's thesis — and I'm now doing my
+                                master's thesis, and I'm now doing my
                                 <strong>PhD in the same lab</strong>.
                             </li>
                         </ul>
                         <p>
-                            You don't need to follow this exact path — I just
+                            You don't need to follow this exact path; I just
                             want to show that meaningful internships often come
                             from
                             <strong>deep engagement and continuity</strong>, not
@@ -1220,7 +1138,7 @@
                         <h3>FAQ #10: What after BS-MS at IISER?</h3>
                         <p>
                             Alright, this is a big one. Many of you aspirants
-                            and parents — this is what you've been waiting for.
+                            and parents, this is what you've been waiting for.
                             You went to IISER, studied high-level science, did
                             your internships, struggled through your exams...
                             what next?
@@ -1245,10 +1163,10 @@
                             <strong
                                 >there is no single, clear, full-and-final plan
                                 with guaranteed outcomes</strong
-                            >. That's not a flaw of the system — it's just how
+                            >. That's not a flaw of the system; it's just how
                             science (and life) works. The world of research is
                             full of uncertainties. But that doesn't make it
-                            bleak — in fact, it means it's flexible, creative,
+                            bleak. In fact, it means it's flexible, creative,
                             and full of options.
                         </p>
 
@@ -1261,7 +1179,7 @@
                         <h5>How do you apply for PhDs?</h5>
                         <p>
                             PhD applications are like summer internship
-                            applications — just more intense. It takes
+                            applications, just more intense. It takes
                             <strong
                                 >a mix of skill, experience, and a bit of
                                 luck</strong
@@ -1285,7 +1203,7 @@
                             eligible to apply to places like
                             <strong>IISERs, IITs, NITs, IISc</strong>, and more.
                             Once you apply, you may be shortlisted for
-                            interviews — again, highly competitive.
+                            interviews, again, highly competitive.
                         </p>
                         <p>
                             If selected, you'll start your PhD with a stipend of
@@ -1309,7 +1227,7 @@
 
                         <p>
                             I know many people doing excellent research during
-                            their PhDs in India — the research community here is
+                            their PhDs in India; the research community here is
                             vibrant and growing.
                         </p>
 
@@ -1338,7 +1256,7 @@
                             <strong>live comfortably and save</strong>.
                         </p>
                         <p>
-                            For example, I'll be transparent — I currently do my
+                            For example, I'll be transparent: I currently do my
                             PhD at <strong>EPFL, Switzerland</strong>.
                         </p>
                         <ul class="blog-list">
@@ -1373,7 +1291,7 @@
                             friends, go for hikes, etc.
                         </p>
                         <p>
-                            But this isn't universal — some labs can be very
+                            But this isn't universal; some labs can be very
                             demanding, and experiences can range from "amazing"
                             to "exhausting." Most people fall somewhere in
                             between.
@@ -1438,7 +1356,7 @@
 
                         <h5>Startups & Entrepreneurship</h5>
                         <p>
-                            Several alumni go on to create startups — often at
+                            Several alumni go on to create startups, often at
                             the interface of science, health, and AI.
                         </p>
 
@@ -1494,7 +1412,7 @@
                         <p>
                             Some are professors, some are scientists in top
                             labs, some are industry leaders, some work in global
-                            policy, some have built companies, — it's a vibrant
+                            policy, some have built companies. It's a vibrant
                             and growing community.
                         </p>
                         <p>
@@ -1540,10 +1458,10 @@
                         </div>
                     </div>
                 </article>
-                <footer class="cv-footer">
-                    <p>&copy; 2025 Parth Bibekar</p>
-                </footer>
             </main>
+            <footer class="site-footer">
+                © 2026 Parth Bibekar · Lausanne, Switzerland
+            </footer>
         </div>
     </body>
 </html>

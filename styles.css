@@ -14,19 +14,6 @@
     color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-        --bg: #111214;
-        --text: #ececec;
-        --text-2: #a9adb3;
-        --muted: #73777d;
-        --border: #26282c;
-        --surface: #1a1c1f;
-        --accent: #7fb0ff;
-        color-scheme: dark;
-    }
-}
-
 :root[data-theme="dark"] {
     --bg: #111214;
     --text: #ececec;
